@@ -25,7 +25,7 @@
   		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		
 		<!-- font-awesome -->
-		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" rel="stylesheet" />
+		<link href="${pageContext.request.contextPath}/resources/css/font-awesome.min.css" rel="stylesheet" />
 		
 		<!-- Custom CSS -->
 		<link href="${pageContext.request.contextPath}/resources/css/common.css" rel="stylesheet">
