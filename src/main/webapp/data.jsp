@@ -25,7 +25,7 @@
   		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		
 		<!-- font-awesome -->
-		<link href="${pageContext.request.contextPath}/resources/lib/fint-awesome/css/font-awesome.min.css" rel="stylesheet" />
+		<link href="${pageContext.request.contextPath}/resources/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 		
 		<!-- Custom CSS -->
 		<link href="${pageContext.request.contextPath}/resources/css/common.css" rel="stylesheet">
@@ -161,7 +161,7 @@
 			                           </li>
 			                           <li>
 			                               <a href="${pageContext.request.contextPath}/main-profile.navigation">
-			                                   <i class="fa fa-database"></i>  &nbsp;내 데이터
+			                                   <i class="fa fa-database"></i>  &nbsp;데이터 히스토리
 			                               </a>
 			                           </li>
 			                           <li>

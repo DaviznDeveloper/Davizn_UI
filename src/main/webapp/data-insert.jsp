@@ -25,13 +25,15 @@
   		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		
 		<!-- font-awesome -->
-		<link href="${pageContext.request.contextPath}/resources/css/font-awesome.min.css" rel="stylesheet" />
+		<link href="${pageContext.request.contextPath}/resources/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 		
 		<!-- Custom CSS -->
 		<link href="${pageContext.request.contextPath}/resources/css/common.css" rel="stylesheet">
+		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/sideBar.css">
 		
 		<!-- Custom Script -->
 		<script src="${pageContext.request.contextPath}/resources/js/common.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/js/sideBar.js"></script>
 
 	</head>
 	
@@ -179,6 +181,11 @@
 									</li>
 									 --%>
 								</li>
+								
+								<!-- login sidebar test -->
+								<li>
+									<button type="button" id="login-sidebar-btn" class="btn btn-info">로그인</button>
+								</li>
 							</ul>
 							
 						</div>
@@ -186,6 +193,47 @@
 					</div>
 				</div>
 				<!-- /Main_Top_Nav -->
+				
+				<!-- Sidebar -->
+		        <div id="sidebar-wrapper">
+		        	<div class="sidebar-box">
+		        		<div class="alert alert-danger alert-dismissible" role="alert">
+  							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+  								<span aria-hidden="true">&times;</span>
+  							</button>
+  							<strong id="login-fail">잘못된 아이디 또는 비밀번호 입니다.</strong>
+						</div>
+		        	
+		        		<form action="" id="" method="">
+				            <ul class="sidebar-nav">
+				                <li>
+				                	<div class="form-group">
+				                		<input type="text" name="" class="form-control" placeholder="이메일">
+				                	</div>
+				                </li>
+				                <li>
+				                	<div class="form-group">
+				                		<input type="password" name="" class="form-control" placeholder="비밀번호">
+				                	</div>
+				                </li>
+				                <li>
+				                	<div class="form-group">
+				                		<input type="submit" class="btn btn-info btn-block" value="로그인">
+				                	</div>
+				                </li>
+				                <li>
+				                	<a href="#">아이디가 생각나지 않으세요?</a>
+				                </li>
+				                <li>
+				                	<a href="#">비밀번호가 생각나지 않으세요?</a>
+				                </li>
+				            </ul>
+				        </form>
+				        
+				        
+				        
+			        </div>
+		        </div>
 				
 				<br>
 				
