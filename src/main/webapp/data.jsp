@@ -161,7 +161,7 @@
 			                           </li>
 			                           <li>
 			                               <a href="${pageContext.request.contextPath}/main-profile.navigation">
-			                                   <i class="fa fa-database"></i>  &nbsp;내 데이터
+			                                   <i class="fa fa-database"></i>  &nbsp;데이터 히스토리
 			                               </a>
 			                           </li>
 			                           <li>

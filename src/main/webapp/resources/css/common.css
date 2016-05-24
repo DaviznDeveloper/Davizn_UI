@@ -59,6 +59,10 @@ html, body {
 	background: #ff0080;
 }
 
+#login-sidebar-btn {
+	margin: 9px;
+}
+
 
 /* content */
 .content-container {
