@@ -242,12 +242,12 @@
 				        		
 				        		<li>
 					        		<div class="form-group">
-					        			<button type="button" class="btn btn-block fb-login">페이스북</button>
+					        			<button type="button" class="btn btn-block fb-login"></button>
 									</div>
 				        		</li>
 				        		<li>
 				        			<div class="form-group">
-				        				<button type="button" class="btn btn-block">구글</button>
+				        				<button type="button" class="btn btn-block goo-login"></button>
 				        			</div>
 				        		</li>
 				        		
