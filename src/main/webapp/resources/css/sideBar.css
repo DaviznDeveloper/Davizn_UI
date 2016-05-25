@@ -21,6 +21,40 @@
 	font-size: 13px;
 }
 
+.get-id-pw {
+	margin-top: -10px;
+	margin-bottom: 10px;
+	text-align: center;
+	line-height: 30px;
+}
+
+.login-border-bottom {
+	position: relative;
+	margin-top: 30px;
+	border-bottom: 1px solid #9d9d9d;
+}
+
+.login-or-box {
+	position: absolute;
+	width: 70px;
+	margin-top: -10px;
+	margin-left: 105px;
+	text-align: center;
+	text-indent: none;
+	line-height: 20px;
+	background: #fff;
+	color: #9d9d9d;
+}
+
+.login-or {
+	width: 50px;
+	text-indent: none;
+}
+
+.fb-login {
+	margin-top: 30px;
+}
+
 /* Change with of sidebar from 0 to 250px */
 #wrap.menuDisplayed #sidebar-wrapper {
     width: 320px;

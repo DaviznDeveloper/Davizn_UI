@@ -222,15 +222,38 @@
 				                	</div>
 				                </li>
 				                <li>
-				                	<a href="#">아이디가 생각나지 않으세요?</a>
+				                	<a href="#" class="get-id-pw">아이디 또는 비밀번호 찾기</a>
 				                </li>
 				                <li>
-				                	<a href="#">비밀번호가 생각나지 않으세요?</a>
+				                	<a href="">
+					                	<button type="button" class="btn btn-success btn-block">
+					                		회원가입
+					                	</button>
+				                	</a>
 				                </li>
+				        		<!-- 소셜 로그인 -->
+				        		<li>
+				        			<div class="login-border-bottom">
+				        				<div class="login-or-box">
+				        					<div class="login-or">또는</div>
+				        				</div>
+				        			</div>
+				        		</li>
+				        		
+				        		<li>
+					        		<div class="form-group">
+					        			<button type="button" class="btn btn-block fb-login">페이스북</button>
+									</div>
+				        		</li>
+				        		<li>
+				        			<div class="form-group">
+				        				<button type="button" class="btn btn-block">구글</button>
+				        			</div>
+				        		</li>
+				        		
+				        		
 				            </ul>
 				        </form>
-				        
-				        
 				        
 			        </div>
 		        </div>
