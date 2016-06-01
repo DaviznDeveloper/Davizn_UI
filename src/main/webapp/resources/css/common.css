@@ -63,13 +63,37 @@ html, body {
 	margin: 9px;
 }
 
-
 /* content */
 .content-container {
 	float: none;
 	margin: 0 auto;
 	margin-top: 60px;
 }
+
+/* sign-up page */
+.sign-up-step-ul {
+	height: 50px;
+	padding: 0px;
+	width: 100%;
+}
+
+.sign-up-step-li {
+	height: 100%;
+	list-style: none;
+	padding: 0px;
+	border: 1px solid #dadada;
+}
+
+.sign-up-step-li:nth-child(1), .sign-up-step-li:nth-child(2) {
+	border-right: 0px;
+}
+
+.sign-up-input-info {
+	font-size: 12px;
+}
+
+
+/* sign-up page */
 
 /* data */
 .data-list-table {
