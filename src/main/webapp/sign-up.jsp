@@ -301,10 +301,24 @@
 								id="" name="" placeholder="사용하실 비밀번호를 입력하세요">
 							<span class="sign-up-input-info">비밀번호는 최소 7글자에서 최대 14글자까지 설정하실 수 있어요.</span>
 						</div>
+
+						<hr>
+	
+						<div class="checkbox">
+							<label> <input type="checkbox" value="">
+								Dvizn 서비스 약관 및 개인 정보 보호 정책에 동의합니다.
+							</label>
+						</div>
+						<
+						
+						<hr>
+						
 						<button type="submit" class="btn btn-success">계정 생성하기</button>
 					</form>
 
 				</div>
+				
+				<div id="push"></div>
 				
 			</div>
 			
