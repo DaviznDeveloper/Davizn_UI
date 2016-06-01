@@ -63,6 +63,13 @@ html, body {
 	margin: 9px;
 }
 
+.center-block  {
+	float: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;}
+
+
 /* content */
 .content-container {
 	float: none;
@@ -88,12 +95,28 @@ html, body {
 	border-right: 0px;
 }
 
+.sign-up-input {
+	width: 450px;
+}
+
 .sign-up-input-info {
 	font-size: 12px;
 }
-
-
 /* sign-up page */
+
+/* sign-up-ok page */
+.sign-up-ok-left {
+	float: left;
+	margin-left: 100px;
+}
+
+.sign-up-ok-right {
+	float: right;
+	margin-right: 100px;
+}
+
+/* sign-up-ok page */
+
 
 /* data */
 .data-list-table {
