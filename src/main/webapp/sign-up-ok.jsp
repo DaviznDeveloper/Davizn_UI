@@ -275,56 +275,23 @@
 				<!-- content -->
 				<div class="col-md-10 content-container">
 	
-					<h2>Davizn 회원가입</h2>
-					<h4>Davizn에 가입하고 당신의 데이터를 관리하세요.</h4>
-					
-					<hr>
-					
-					<h4><b>개인 계정 만들기</b></h4>
-
-					<br>
-
-					<form action="" method="post">
-						<div class="form-group">
-							<label for="UserName">이름</label> 
-							<input type="text" class="form-control sign-up-input" 
-								id="" name="" placeholder="사용하실 이름을 입력하세요">
-							<span class="sign-up-input-info">이름은 닉네임과도 같습니다. 단, 사용자끼리 중복되는 이름은 허용하지 않습니다.</span>
+					<div class="col-md-8 col-md-offset-2 center-block">
+						<div class="panel panel-default">
+							<h2 class="font-center">Davizn의 회원이 되신 것을 축하합니다.</h2>
+							<br>
+							<h4 class="font-center">1 개의 데이터 저장소와 대시보드, 100 포인트를 무료로 드립니다.</h4>
+							
+							<hr>
+							
+							<h4 class="font-center">간단한 이용방법을 알아볼까요?</h4>
+							<br>
+							<div class="row">
+								<a href="" class="sign-up-ok-left">네</a>
+								<a href="" class="sign-up-ok-right">아니요. 이미 알고 있습니다.</a>
+							</div>
+							<br>
 						</div>
-						<div class="form-group">
-							<label for="UserEmail">이메일 주소</label>
-							<input type="email" class="form-control sign-up-input" 
-								id="" name="" placeholder="사용하실 이메일을 입력하세요">
-							<span class="sign-up-input-info">이메일이 당신의 계정 아이디가 될 것입니다.</span>
-						</div>
-						<div class="form-group">
-							<label for="UserPassword">비밀번호</label>
-							<input type="password" class="form-control sign-up-input" 
-								id="" name="" placeholder="사용하실 비밀번호를 입력하세요">
-							<span class="sign-up-input-info">비밀번호는 최소 7글자에서 최대 14글자까지 설정하실 수 있습니다.</span>
-						</div>
-						<div class="form-group">
-							<label for="UserTel">연락처</label>
-							<input type="tel" class="form-control sign-up-input" 
-								id="" name="" placeholder="연락 가능한 연락처를 입력하세요">
-							<span class="sign-up-input-info">연락처 입력은 필수는 아닙니다.</span>
-						</div>
-
-						<hr>
-	
-						<div class="checkbox">
-							<label> <input type="checkbox" value="">
-								Dvizn 서비스 약관 및 개인 정보 보호 정책에 동의합니다.
-							</label>
-						</div>
-						
-						<hr>
-						
-						<button type="submit" class="btn btn-success">계정 생성하기</button>
-						
-						<br>
-						
-					</form>
+					</div>
 
 				</div>
 				
