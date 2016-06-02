@@ -41,7 +41,20 @@ html, body {
 	float: none;
 	text-align: center;
 }
+
+.no-padding {
+	padding: 0px;
+}
+
+.dvn-logo {
+	width: 200px;
+	height: 59px;
+	background: url('../img/Davizn.png') no-repeat;
+	background-size: 100%;
+	
+}
 /* 쉬운 공통 설정 */
+
 .full-container {
 	padding-left: 0px;
 	padding-right: 0px;
@@ -124,15 +137,64 @@ html, body {
 
 /* sign-up-ok page */
 
+/* sign-in page */
+.sign-in-fb-login {
+	float: left;
+	margin-top: 30px;
+	width: 100%;
+	height: auto;
+	padding: 0px;
+	opacity: 0.8;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.sign-in-fb-login:hover {
+	opacity: 1;
+}
+
+.sign-in-goo-login {
+	float: left;
+	margin-top: 10px;
+	width: 100%;
+	height: auto;
+	padding: 0px;
+	opacity: 0.8;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.sign-in-login-or-box {
+	position: absolute;
+	left: calc(50% - 35px);
+	width: 70px;
+	margin-top: -10px;
+	text-align: center;
+	text-indent: none;
+	line-height: 20px;
+	background: #fff;
+	color: #9d9d9d;
+}
+
+.sign-in-goo-login:hover {
+	opacity: 1;
+}
+/* sign-in page */
 
 /* data */
+.data-m-repo-select {
+	margin-top: 15px;
+}
+
 .data-list-table {
 	border-top: 2px solid #0080ff;
 	border-bottom: 2px solid #0080ff;
 }
 
 .chart-list-type {
+	width: 30px;
 	font-size: 20px;
+	text-align: center;
 	color: #c540fd;
 }
 
@@ -163,4 +225,16 @@ html, body {
 	padding-left: 10px;
 	padding-right: 10px;
 	font-size: 18px;
+}
+
+.thumbnail {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.breadcrumb {
+	padding-left: 0px;
+	font-size: 16px;
+	background: #fff;
+	border-bottom: 1px solid #eee;
 }
