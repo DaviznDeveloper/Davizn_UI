@@ -216,7 +216,7 @@
   							<strong id="login-fail">잘못된 아이디 또는 비밀번호 입니다.</strong>
 						</div>
 		        	
-		        		<form action="" id="" method="post">
+		        		<form action="" id="" method="">
 				            <ul class="sidebar-nav">
 				                <li>
 				                	<div class="form-group">
@@ -269,38 +269,118 @@
 				        
 			        </div>
 		        </div>
+		        <!-- Sidebar -->
 				
 				<br>
 				
 				<!-- content -->
 				<div class="col-md-10 content-container">
+
+					<ol class="breadcrumb">
+						<li><a href="#">홈</a></li>
+						<li class="active">데이터 관리</li>
+					</ol>
+					
+					<div class="data-repo-box" data-toggle="tooltip" title="저장소 제목">
+						<a href="${pageContext.request.contextPath}/data-insert.jsp" type="button" class="btn btn-info data-repo-btn">
+							<i class="fa fa-folder-o data-repo-icon" aria-hidden="true"></i>
+						</a>
+					</div>
+					
+					<!-- Button trigger modal -->
+					<div class="data-repo-box" data-toggle="tooltip" title="저장소 확장하기">
+						<button type="button" class="btn btn-default data-repo-create-btn"
+							data-toggle="modal" data-target="#data-repo-create">
+							<i class="fa fa-plus data-repo-create-icon" aria-hidden="true"></i>
+						</button>
+					</div>
 	
-					<br><br><br>
+					<!-- Modal -->
+					<div class="modal fade" id="data-repo-create" tabindex="-1" role="dialog"
+						aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-sm">
+							<div class="modal-content">
+				
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"
+										aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+									<h4 class="modal-title" id="myModalLabel">데이터 저장소 확장하기</h4>
+								</div>
+								
+								<div class="modal-body">
+								
+									<div class="row col-md-12 center-block">
+									
+										<form action="" method="post">
+											
+						                	<div class="form-group">
+						                		<input type="text" name="" class="form-control" 
+						                			placeholder="저장소 제목을 입력하세요">
+						                	</div>
+						                	
+						                	<div class="form-group">
+						                		<button type="submit" name="" class="form-control btn btn-info">
+						                			확장하기
+						                		</button>
+						                	</div>
+										
+										</form>
+										
+									</div>
+								
+								</div>
+
+								<div class="modal-footer">
+									<div class="row col-md-12 center-block">
+									
+										<div class="">
+											<div class="col-md-8 no-padding">
+												현재 보유 포인트 : 
+											</div>
+											
+											<div class="col-md-4 no-padding">
+												<span class="">100</span> 
+											</div>
+										</div>
+										
+										<div class="">
+											<div class="col-md-8 no-padding">
+												차감될 포인트 : 
+											</div>
+											
+											<div class="col-md-4 no-padding">
+												<span class="">1000</span> 
+											</div>
+										</div>
+										
+										<hr>
+										
+										<div class="">
+											<div class="col-md-8 no-padding">
+												합계 : 
+											</div>
+											
+											<div class="col-md-4 no-padding">
+												<span class="">-900</span> 
+											</div>
+										</div>
+										
+									</div>
+								</div>
 	
-					<div class="col-md-8 col-md-offset-2 center-block">
-						<div class="panel panel-default">
-							<h2 class="font-center">Davizn의 회원이 되신 것을 축하합니다.</h2>
-							<br>
-							<h4 class="font-center">1 개의 데이터 저장소와 대시보드, 100 포인트를 무료로 드립니다.</h4>
-							
-							<br>
-							
-							<h4 class="font-center">간단한 이용방법을 알아볼까요?</h4>
-							<hr>
-							<div class="col-md-6 no-padding">
-								<a href="" class="sign-up-ok-box sign-up-ok-left">네</a>
 							</div>
-							<div class="col-md-6 no-padding">
-								<a href="" class="sign-up-ok-box sign-up-ok-right">아니요. 이미 알고 있습니다.</a>
-							</div>
-							<br>
 						</div>
 					</div>
-
+					<!-- Modal -->
+	
+					<br>
+				
+					<div id="push"></div>
+				
 				</div>
-				
-				<div id="push"></div>
-				
+			
 			</div>
 			
 		</div>

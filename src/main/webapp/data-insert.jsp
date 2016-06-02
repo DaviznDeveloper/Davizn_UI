@@ -69,7 +69,7 @@
 									</a>
 								</li>
 								<li class="nav_menu">
-									<a href="${pageContext.request.contextPath}/BoardList.action">
+									<a href="${pageContext.request.contextPath}/data-main.jsp">
 										<i class="fa fa-database" aria-hidden="true"></i> &nbsp;데이터 관리
 									</a>
 								</li>
@@ -237,7 +237,7 @@
 				                	<a href="#" class="get-id-pw">아이디 또는 비밀번호 찾기</a>
 				                </li>
 				                <li>
-				                	<a href="">
+				                	<a href="${pageContext.request.contextPath}/sign-up.jsp">
 					                	<button type="button" class="btn btn-success btn-block">
 					                		회원가입
 					                	</button>
@@ -277,7 +277,7 @@
 
 					<ol class="breadcrumb">
 						<li><a href="#">홈</a></li>
-						<li><a href="#">데이터 관리</a></li>
+						<li><a href="${pageContext.request.contextPath}/data-main.jsp">데이터 관리</a></li>
 						<li class="active">저장소 제목</li>
 					</ol>
 					
