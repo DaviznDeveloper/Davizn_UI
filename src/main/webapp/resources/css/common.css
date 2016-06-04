@@ -29,41 +29,6 @@ html, body {
   }
 }
 
-/* 쉬운 공통 설정 */
-.center-block  {
-	float: none;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.vertical-center {
-	vertical-align: middle;
-}
-
-.font-center {
-	float: none;
-	text-align: center;
-}
-
-.no-padding {
-	padding: 0px;
-}
-
-.dvn-logo {
-	width: 200px;
-	height: 59px;
-	background: url('../img/Davizn.png') no-repeat;
-	background-size: 100%;
-}
-
-.margin-box {
-	float: none;
-	margin-left: auto;
-	margin-right: auto;
-}
-/* 쉬운 공통 설정 */
-
 .full-container {
 	padding-left: 0px;
 	padding-right: 0px;
@@ -200,6 +165,20 @@ html, body {
 }
 /* sign-in page */
 
+
+/* profile page */
+.profile-nickname {
+	font-size: 20px;
+	line-height: 50px;
+}
+
+.profile-font {
+	font-size: 16px;
+	line-height: 40px;
+}
+/* profile page */
+
+
 /* data */
 .data-repo-box {
 	float: left;
@@ -295,3 +274,44 @@ html, body {
 	background: #fff;
 	border-bottom: 1px solid #eee;
 }
+
+
+
+/* 쉬운 공통 설정 */
+.center-block  {
+	float: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.vertical-center {
+	vertical-align: middle;
+}
+
+.font-center {
+	float: none;
+	text-align: center;
+}
+
+.no-padding {
+	padding: 0px;
+}
+
+.no-margin {
+	margin: 0px; 
+}
+
+.dvn-logo {
+	width: 200px;
+	height: 59px;
+	background: url('../img/Davizn.png') no-repeat;
+	background-size: 100%;
+}
+
+.margin-box {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* 쉬운 공통 설정 */
