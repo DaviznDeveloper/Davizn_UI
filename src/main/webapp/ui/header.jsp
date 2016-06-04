@@ -27,6 +27,9 @@
 		<!-- font-awesome -->
 		<link href="${pageContext.request.contextPath}/resources/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 		
+		<!-- editTable -->
+		<link href="${pageContext.request.contextPath}/resources/lib/editTable/jquery.edittable.css" rel="stylesheet" />
+		
 		<!-- Custom CSS -->
 		<link href="${pageContext.request.contextPath}/resources/css/common.css" rel="stylesheet">
 		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/sideBar.css">
