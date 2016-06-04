@@ -13,6 +13,8 @@ $(function() {
 	// 툴팁
 	$('[data-toggle="tooltip"]').tooltip();
 	
+	// 탭
+	
 	//데이터 저장소
 	$(".data-repo-btn").hover(
 		function() {

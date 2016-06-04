@@ -15,7 +15,7 @@
 					
 					<div class="col-md-3 no-padding">
 
-						<a href="#" class="thumbnail profile-thumbnail no-margin"> 
+						<a href="#" class="thumbnail profile-thumbnail no-margin" data-toggle="tooltip" title="프로필 수정하기"> 
 							<img src="${pageContext.request.contextPath}/resources/img/avatar2.png" alt="...">
 						</a>
 						
@@ -48,8 +48,75 @@
 				
 					</div>
 					
-					<div class="col-md-9 no-padding">
-					
+					<div class="col-md-8 col-md-offset-1 no-padding">
+
+						<div role="tabpanel">
+				
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs" role="tablist">
+								<li role="presentation" class="active">
+									<a href="#mydash" aria-controls="mydash" role="tab" data-toggle="tab">내 대시보드</a>
+								</li>
+								<li role="presentation">
+									<a href="#myrepo" aria-controls="myrepo" role="tab" data-toggle="tab">내 데이터 저장소</a>
+								</li>
+							</ul>
+				
+							<!-- Tab panes -->
+							<div class="tab-content">
+								<div role="tabpanel" class="tab-pane active" id="mydash">
+									<br>
+									<div class="list-group">
+										<a href="#" class="list-group-item">
+											<span class="badge">7</span>
+											
+											kosta 112기 활동 내역
+										</a>
+										<a href="#" class="list-group-item">
+											<span class="badge">4</span>
+											java 일일 강의 내용
+										</a>
+										<a href="#" class="list-group-item">
+											<span class="badge">6</span>
+											web - client 일일 강의 내용
+										</a>
+										<a href="#" class="list-group-item">
+											Porta ac consectetur ac
+										</a>
+										<a href="#" class="list-group-item">
+											Vestibulum at eros
+										</a>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane" id="myrepo">
+									<br>
+									<div class="list-group">
+										<a href="#" class="list-group-item">
+											<span class="badge">7</span>
+											kosta 112기 활동 내역
+										</a>
+										<a href="#" class="list-group-item">
+											<span class="badge">4</span>
+											java 일일 강의 내용
+										</a>
+										<a href="#" class="list-group-item">
+											<span class="badge">6</span>
+											web - client 일일 강의 내용
+										</a>
+										<a href="#" class="list-group-item">
+											<span class="badge">0</span>
+											Database
+										</a>
+										<a href="#" class="list-group-item">
+											<span class="badge">0</span>
+											Spring
+										</a>
+									</div>
+								</div>
+							</div>
+				
+						</div>
+				
 					</div>
 	
 				</div>
