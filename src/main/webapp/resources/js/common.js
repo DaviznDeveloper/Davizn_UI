@@ -18,12 +18,11 @@ $(function() {
 		event.preventDefault();
 		$("#uploadImage").click();
 	});
-	
 	$("#uploadImage").change(function(){
 	    readUploadImage(this);
 	});
 	
-	//데이터 저장소
+	//데이터 저장소 마우스 오버 효과
 	$(".data-repo-btn").hover(
 		function() {
 			$(this).children().remove();
@@ -50,23 +49,18 @@ $(function() {
 	
 });
 
-// 프로필 사진 업로드
+// 프로필 사진 업로드 호출 함수
 function readUploadImage( inputObject ) {
 
 	if ( window.File && window.FileReader ) {
 
 		/* 입력된 파일이 1개 이상 있는지 확인 */
-
 		if ( inputObject.files && inputObject.files[0]) {
 
 			/* 이미지 파일인지도 체크  */
-
 			if ( !(/image/i).test(inputObject.files[0].type ) ){
-
 				alert("이미지 파일을 선택해 주세요!");
-
 				return false;
-
 			}
 
 			/* FileReader */
@@ -82,12 +76,8 @@ function readUploadImage( inputObject ) {
 			
 		}
 
-
-
 	} else {
-
 		alert( "지원하지 않는 브라우저 입니다.");
-
 	}
 
 }

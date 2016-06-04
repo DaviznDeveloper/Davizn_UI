@@ -16,7 +16,7 @@
 					<div class="col-md-3 no-padding">
 
 						<a href="#" class="thumbnail profile-thumbnail no-margin" data-toggle="tooltip" title="프로필 수정하기"> 
-							<img src="${pageContext.request.contextPath}/resources/img/avatar2.png" alt="...">
+							<img id="profile-preview" src="${pageContext.request.contextPath}/resources/img/avatar2.png" alt="...">
 						</a>
 						
 						<div class="col-md-12 no-padding">
