@@ -24,17 +24,26 @@
 						</div>
 						
 						<div class="col-md-12 no-padding">
-							<span class="profile-font">leafgreen.hwang@gmail.com</span>
+							<span class="profile-font">
+								<i class="fa fa-envelope profile-font-icon" aria-hidden="true"></i>
+								&nbsp;&nbsp;leafgreen.hwang@gmail.com
+							</span>
 						</div>
 						
 						<div class="col-md-12 no-padding">
-							<span class="profile-font">010-2932-4718</span>
+							<span class="profile-font">
+								<i class="fa fa-phone profile-font-icon" aria-hidden="true"></i>
+								&nbsp;&nbsp;010-2932-4718
+							</span>
 							<hr>
 						</div>
 						
 						
 						<div class="col-md-12 no-padding">
-							<span class="profile-font">2016년 1월 12일에 가입.</span>
+							<span class="profile-font">
+								<i class="fa fa-clock-o profile-font-icon" aria-hidden="true"></i>
+								&nbsp;&nbsp;2016년 1월 12일에 가입.
+							</span>
 						</div>
 				
 					</div>
