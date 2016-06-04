@@ -27,6 +27,10 @@
 		<!-- font-awesome -->
 		<link href="${pageContext.request.contextPath}/resources/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 		
+		<!-- image-re-crop -->
+		<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/lib/ImageResizeCropCanvas/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/lib/ImageResizeCropCanvas/css/component.css" />
+		
 		<!-- Custom CSS -->
 		<link href="${pageContext.request.contextPath}/resources/css/common.css" rel="stylesheet">
 		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/sideBar.css">

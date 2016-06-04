@@ -14,7 +14,17 @@ $(function() {
 	$('[data-toggle="tooltip"]').tooltip();
 	
 	// 프로필 사진 업로드
+	$("#profile-thum-modi").click(function() {
+		event.preventDefault();
+		//$("#uploadImage").click();
+
+	    $(this).children().addClass('resize-image');
+	    resizeableImage($(".resize-image"));
+	});
+	
 	$("#uploadImage").change(function(){
+		//resizeableImage($(".resize-image"));
+		event.preventDefault();
 	    readUploadImage(this);
 	});
 	
@@ -48,33 +58,13 @@ $(function() {
 // 프로필 사진 업로드
 function readUploadImage( inputObject ) {
 
-/*
-
-브라우저에서 FileReader가 지원되는지
-
-확인하기 위해 
-
-window.File && window.FileReader 
-
-해 본다. 
-
-안되면 안된다고 알려 주면 되지~ ㅋㅋ
-
-*/
-
 	if ( window.File && window.FileReader ) {
 
-		/*
-
-		입력된 파일이 1개 이상 있는지 확인~
-
-		*/
+		/* 입력된 파일이 1개 이상 있는지 확인 */
 
 		if ( inputObject.files && inputObject.files[0]) {
 
-
-
-			/* 이미지 파일인지도 체크해 주면 좋지~ */
+			/* 이미지 파일인지도 체크  */
 
 			if ( !(/image/i).test(inputObject.files[0].type ) ){
 
@@ -84,32 +74,37 @@ window.File && window.FileReader
 
 			}
 
-			/* FileReader 를 준비 한다. */
+			/* FileReader */
 
 			var reader = new FileReader();
 
 			reader.onload = function (e) {
-
-				/* reader가 다 읽으면 imagePreview에 뿌려 주면 끝~  */
-
 				$('#profile-preview').attr('src', e.target.result);
-
 			}
 
-
-
 			/* input file에 있는 파일 하나를 읽어온다. */
-
 			reader.readAsDataURL(inputObject.files[0]);
-
+			
 		}
 
 
 
 	} else {
 
-		alert( "미리보기 안되요.~ 브라우저를 업그레이드하세요~");
+		alert( "지원하지 않는 브라우저 입니다.");
 
 	}
 
+}
+
+// 프로필 사진 리사이징
+function autoImgResize(obj, maxSize) {
+	alert("aa");
+    obj.each(function() {
+        var obj = $(this).attr({alt: '클릭하시면 원본 사이즈로 보실 수 있습니다.'}).unbind('click').bind('click', function() { window.open(obj.attr('src'), ''); }).css({cursor: 'pointer'});
+        var width = 0, height = 0;
+        width = parseInt(obj.attr('width'), 10) || parseInt(obj.css('width'), 10);
+        height = parseInt(obj.attr('height'), 10) || parseInt(obj.css('height'), 10);
+        if(width > maxSize) obj.css({width: maxSize+'px', height: Math.round(height * (maxSize / width))+'px'});
+    });
 }

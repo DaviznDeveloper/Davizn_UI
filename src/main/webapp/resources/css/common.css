@@ -184,6 +184,13 @@ html, body {
 /* profile page */
 
 
+/* profile-modi page */
+#uploadImage {
+	display: none;
+}
+/* profile-modi page */
+
+
 /* data */
 .data-repo-box {
 	float: left;

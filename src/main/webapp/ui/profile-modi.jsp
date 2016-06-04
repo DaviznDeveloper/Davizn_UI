@@ -18,10 +18,10 @@
 
 						<form action="" method="post">
 
-							<a href="" class="thumbnail profile-thumbnail no-margin" data-toggle="tooltip" title="프로필 사진 변경하기">
+							<a href="" id="profile-thum-modi" class="thumbnail profile-thumbnail no-margin" data-toggle="tooltip" title="프로필 사진 변경하기">
 								<img id="profile-preview" src="${pageContext.request.contextPath}/resources/img/avatar2.png" alt="...">
 							</a>
-							<input type='file' id="uploadImage" />
+							<input type='file' id="uploadImage" name="" />
 							
 							<br>
 							
@@ -62,5 +62,7 @@
 			</div>
 			
 		</div>
+		
+		<script src="${pageContext.request.contextPath}/resources/lib/ImageResizeCropCanvas/js/component.js"></script>
 
 <%@include file="/ui/footer.jsp"%>
