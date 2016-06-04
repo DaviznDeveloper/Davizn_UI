@@ -19,7 +19,17 @@
 						<form action="" method="post">
 
 							<a href="" id="profile-thum-modi" class="thumbnail profile-thumbnail no-margin" data-toggle="tooltip" title="프로필 사진 변경하기">
-								<img id="profile-preview" src="${pageContext.request.contextPath}/resources/img/avatar2.png" alt="...">
+								<div class="component">
+									<div class="overlay">
+										<div class="overlay-inner"></div>
+									</div>
+									<!-- This image must be on the same domain as the demo or it will not work on a local file system -->
+									<!-- http://en.wikipedia.org/wiki/Cross-origin_resource_sharing -->
+									<img id="profile-preview" src="${pageContext.request.contextPath}/resources/img/avatar2.png" alt="...">
+									<button class="btn-crop js-crop">
+										Crop<img class="icon-crop" src="img/crop.svg">
+									</button>
+								</div>
 							</a>
 							<input type='file' id="uploadImage" name="" />
 							
@@ -63,4 +73,7 @@
 			
 		</div>
 		
+		<script src="${pageContext.request.contextPath}/resources/lib/ImageResizeCropCanvas/js/jquery-2.1.1.min.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/lib/ImageResizeCropCanvas/js/component.js"></script>
+
 <%@include file="/ui/footer.jsp"%>
