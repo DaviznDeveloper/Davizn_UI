@@ -21,6 +21,9 @@
 						
 						<div class="col-md-12 no-padding">
 							<span class="profile-nickname">Hwang</span>
+							<a href="">
+								<span class="label label-primary">프로필 수정하기</span>
+							</a>
 						</div>
 						
 						<div class="col-md-12 no-padding">
@@ -38,6 +41,13 @@
 							<hr>
 						</div>
 						
+						<div class="col-md-12 no-padding">
+							<span class="profile-font">
+								<i class="fa fa-product-hunt profile-font-icon" aria-hidden="true"></i>
+								&nbsp;&nbsp;100
+							</span>
+							<hr>
+						</div>
 						
 						<div class="col-md-12 no-padding">
 							<span class="profile-font">
@@ -69,22 +79,18 @@
 									<div class="list-group">
 										<a href="#" class="list-group-item">
 											<span class="badge">7</span>
-											
-											kosta 112기 활동 내역
+											<i class="fa fa-tachometer profile-font-icon" aria-hidden="true"></i>
+											&nbsp;&nbsp;kosta 112기 활동 내역
 										</a>
 										<a href="#" class="list-group-item">
 											<span class="badge">4</span>
-											java 일일 강의 내용
+											<i class="fa fa-tachometer profile-font-icon" aria-hidden="true"></i>
+											&nbsp;&nbsp;java 일일 강의 내용
 										</a>
 										<a href="#" class="list-group-item">
 											<span class="badge">6</span>
-											web - client 일일 강의 내용
-										</a>
-										<a href="#" class="list-group-item">
-											Porta ac consectetur ac
-										</a>
-										<a href="#" class="list-group-item">
-											Vestibulum at eros
+											<i class="fa fa-tachometer profile-font-icon" aria-hidden="true"></i>
+											&nbsp;&nbsp;web - client 일일 강의 내용
 										</a>
 									</div>
 								</div>
@@ -93,23 +99,28 @@
 									<div class="list-group">
 										<a href="#" class="list-group-item">
 											<span class="badge">7</span>
-											kosta 112기 활동 내역
+											<i class="fa fa-database profile-font-icon" aria-hidden="true"></i>
+											&nbsp;&nbsp;kosta 112기 활동 내역
 										</a>
 										<a href="#" class="list-group-item">
 											<span class="badge">4</span>
-											java 일일 강의 내용
+											<i class="fa fa-database profile-font-icon" aria-hidden="true"></i>
+											&nbsp;&nbsp;java 일일 강의 내용
 										</a>
 										<a href="#" class="list-group-item">
 											<span class="badge">6</span>
-											web - client 일일 강의 내용
+											<i class="fa fa-database profile-font-icon" aria-hidden="true"></i>
+											&nbsp;&nbsp;web - client 일일 강의 내용
 										</a>
 										<a href="#" class="list-group-item">
 											<span class="badge">0</span>
-											Database
+											<i class="fa fa-database profile-font-icon" aria-hidden="true"></i>
+											&nbsp;&nbsp;Database
 										</a>
 										<a href="#" class="list-group-item">
 											<span class="badge">0</span>
-											Spring
+											<i class="fa fa-database profile-font-icon" aria-hidden="true"></i>
+											&nbsp;&nbsp;Spring
 										</a>
 									</div>
 								</div>
