@@ -17,15 +17,21 @@
 		<meta name="author" content="Hwang.Young-sun">
 		<link rel="icon" href="${pageContext.request.contextPath}/resources/img/favicon-152.png" sizes="152x152">
 		
-		<title>Davizn - 데이터 시각화 도구</title>
+		<title>Davizn - 데이터 관리형 도구 사이트</title>
 		
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  		
+  		<!-- jQery-ui -->
+  		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 		
 		<!-- font-awesome -->
 		<link href="${pageContext.request.contextPath}/resources/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+		
+		<!-- ipgrid -->
+		<link href="${pageContext.request.contextPath}/resources/lib/ipgrid-master/ip.grid.css" rel="stylesheet" />
 		
 		<!-- editTable -->
 		<link href="${pageContext.request.contextPath}/resources/lib/editTable/jquery.edittable.css" rel="stylesheet" />

@@ -293,6 +293,11 @@ html, body {
 	border-bottom: 1px solid #eee;
 }
 
+/* spreadsheet형 데이터 */
+#jqs {
+	height: 600px;
+}
+
 
 
 /* 쉬운 공통 설정 */

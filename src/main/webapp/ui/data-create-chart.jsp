@@ -36,7 +36,8 @@
 			</div>
 			
 		</div>
-		
+
 <script src="${pageContext.request.contextPath}/resources/lib/editTable/jquery.edittable.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/data-create-chart.js"></script>		
 
 <%@include file="/ui/footer.jsp"%>
