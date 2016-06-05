@@ -22,7 +22,7 @@ $(function() {
 	    readUploadImage(this);
 	});
 	
-	//데이터 저장소 마우스 오버 효과
+	// 데이터 저장소 마우스 오버 효과
 	$(".data-repo-btn").hover(
 		function() {
 			$(this).children().remove();
@@ -37,12 +37,28 @@ $(function() {
 			);
 		}
 	);
-	$(".data-repo-create-btn").hover(
+	$(".data-repo-create-btn, .data-dash-create-btn").hover(
 		function() {
 			$(this).children().css('color','#fff');
 		},
 		function() {
 			$(this).children().css('color','#e3e3e3');
+		}
+	);
+	
+	// 대시보드 마우스 오버 효과
+	$(".data-dash-btn").hover(
+		function() {
+			$(this).children().remove();
+			$(this).append().html(
+				"<i class='fa fa-object-group data-dash-icon' aria-hidden='true'></i>"	
+			);
+		},
+		function() {
+			$(this).children().remove();
+			$(this).append().html(
+					"<i class='fa fa-object-ungroup data-dash-icon' aria-hidden='true'></i>"	
+			);
 		}
 	);
 	
