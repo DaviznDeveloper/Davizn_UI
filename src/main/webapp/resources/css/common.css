@@ -256,6 +256,12 @@ html, body {
 	width: 41px;
 }
 
+.chart-type-btn {
+	width: 40px;
+	height: 40px;
+	padding: 0px;
+}
+
 .chr-list-btn-dash {
 	padding-left: 10px;
 	background: #be80fd;
@@ -268,6 +274,8 @@ html, body {
 
 .chart-list-option {
 	font-size: 20px;
+	text-align: center;
+	vertical-align: middle;
 }
 
 .data-list-div {
@@ -291,6 +299,20 @@ html, body {
 	font-size: 16px;
 	background: #fff;
 	border-bottom: 1px solid #eee;
+}
+
+#chartdiv {
+	height: 400px;
+}
+
+.btn-chart-type {
+	background: #c157e7;
+	color: #fff;
+}
+
+.btn-chart-type:hover {
+	background: #de92ff;
+	color: #fff;
 }
 
 /* spreadsheet형 데이터 */
@@ -358,5 +380,9 @@ html, body {
 	width: 400px;
 	height: 300px;
 	opacity: 0.8;
+}
+
+.margin-right-10 {
+	margin-right: 10px;
 }
 /* 쉬운 공통 설정 */

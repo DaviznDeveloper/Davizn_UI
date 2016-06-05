@@ -25,7 +25,7 @@
   		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   		
   		<!-- jQery-ui -->
-  		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+  		<!-- <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script> -->
 		
 		<!-- font-awesome -->
 		<link href="${pageContext.request.contextPath}/resources/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
