@@ -1,0 +1,50 @@
+<div class="col-md-12 content-container">
+	
+	<ol class="breadcrumb">
+		<li><a href="${pageContext.request.contextPath}/ui/index.jsp">홈</a></li>
+		<li><a href="${pageContext.request.contextPath}/ui/dashboard.jsp">대시보드</a></li>
+		<li class="active">대시보드 제목</li>
+	</ol>
+
+	<button type="button" id="" class="btn btn-success" ng-click="addWidget()">
+		<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 위젯 추가
+	</button>
+	
+	<button type="button" id="" class="btn btn-danger" ng-click="clear()">
+		<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> 대시보드 비우기
+	</button>
+	
+	<select class="form-control dash-list-select" 
+			ng-change="changeDashboard()" ng-model="selectedDashboardId"
+			ng-options="d.id as d.name for d in dashboards | object2Array | orderBy:'id'">
+		<option>내 대시보드 선택</option>
+		<option>2</option>
+		<option>3</option>
+	</select>
+	
+	<br>
+	<br>
+	
+	<div gridster="gridsterOptions">
+		<ul>
+			<li gridster-item="widget" ng-repeat="widget in dashboard.widgets">
+				<div class="box" ng-controller="CustomWidgetCtrl">
+					<div class="box-header">
+						<h3>{{ widget.name }}</h3>
+						<div class="box-header-btns pull-right">
+							<a title="settings" ng-click="openSettings(widget)"><i class="glyphicon glyphicon-cog"></i></a>
+							<a title="Remove widget" ng-click="remove(widget)"><i class="glyphicon glyphicon-trash"></i></a>
+						</div>
+					</div>
+					<div class="box-content">
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<br>
+
+	<div id="push"></div>
+
+</div>

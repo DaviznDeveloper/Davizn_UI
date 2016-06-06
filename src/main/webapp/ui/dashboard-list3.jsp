@@ -15,11 +15,11 @@
 							<li class="active">대시보드 제목</li>
 						</ol>
 						
-						<button type="button" id="" class="btn btn-success">
+						<button type="button" id="widget_create" class="btn btn-success">
 							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 위젯 추가
 						</button>
 						
-						<button type="button" id="" class="btn btn-danger">
+						<button type="button" id="widget_delete" class="btn btn-danger">
 							<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> 대시보드 비우기
 						</button>
 						
@@ -34,7 +34,9 @@
 						
 						<div id="dashboard-container">
 				
-							<div class="resizeDiv"></div>
+							<div class="gridster">
+						        <ul></ul>
+						    </div>
 				
 						</div>
 		
@@ -51,6 +53,7 @@
 		</div>
 
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/js/dashboard-list.js"></script>
+<script src="${pageContext.request.contextPath}/resources/lib/angular-gridster/gridster.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/grid-test.js"></script>
 		
 <%@include file="/ui/footer.jsp"%>

@@ -325,7 +325,7 @@ html, body {
 
 .btn-chart-type:hover {
 	background: #de92ff;
-	color: #fff;
+	color: #1a293b;
 }
 
 /* spreadsheet형 데이터 */
@@ -333,6 +333,31 @@ html, body {
 	height: 600px;
 }
 
+
+/* 대시보드 */
+#dashboard-container {
+	width: 100%;
+	background: #fff;
+	border: 5px solid #e0afff;
+	border-radius: 20px;
+}
+
+.dash-list-select {
+	display: inline-block;
+	float: right;
+	width: 200px;
+}
+
+.dash-widget {
+	width: 150px;
+	height: 150px;
+	padding: 0.5em;
+}
+
+.dash-widget h3 {
+	text-align: center;
+	margin: 0;
+}
 
 
 /* 쉬운 공통 설정 */
