@@ -167,6 +167,7 @@ ul {
 .gridster .gs-w {
     background: #fff;
     border: 1px solid #7f7f7f;
+    border-radius: 4px;
     cursor: pointer;
 }
 

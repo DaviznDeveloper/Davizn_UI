@@ -50,6 +50,27 @@ $(function() {
     	}
     });
     
+    $("#widget_getvalue").click(function() {
+    	var widget_del = $(".gridster > ul").children('.gs-w');
+    	console.log(widget_del);
+        console.log(gridster.dom_to_coords(widget_del[0]));
+        console.log(gridster.dom_to_coords(widget_del[1]));
+    	
+    	var values = new Array();
+    	$.each(widget_del, function(index) {
+    		values += gridster.dom_to_coords(this);
+    	});
+		console.log(values);
+    	//alert(widget_del[0]);
+//    	var widget_values;
+//    	$.each(widget_del, function(index, value) {
+//    		console.log(gridster.dom_to_coords(this));
+//    	});
+    	
+    	//gridster.dom_to_coords(widget_del);
+    	//console.log(gridster.dom_to_coords(widget_values));
+    });
+    
     $("#widget_delete").click(function() {
     	var widget_del = $(".gridster > ul").children().last();
     	gridster.remove_widget(widget_del);

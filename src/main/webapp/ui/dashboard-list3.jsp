@@ -19,6 +19,10 @@
 							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 위젯 추가
 						</button>
 						
+						<button type="button" id="widget_getvalue" class="btn btn-primary">
+							<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> 위젯값 가져오기
+						</button>
+						
 						<button type="button" id="widget_delete" class="btn btn-danger">
 							<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> 대시보드 비우기
 						</button>
