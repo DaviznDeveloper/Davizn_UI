@@ -76,10 +76,21 @@
 										<td scope="col" class="ellipsis board-l-no">3</td>
 										
 										<td scope="col" id="board-title" name="auth" class="ellipsis board-l-title">
-											<a href="" class="board-l-t">
+											<a href="" class="board-l-t" data-toggle="modal"
+												data-target=".board-l-t-pwd">
 												안녕하세요^^
 												<img src="${pageContext.request.contextPath}/resources/img/new.gif">
 											</a>
+											<!-- Small modal -->
+											<div class="modal fade board-l-t-pwd" tabindex="-1"
+												role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+												<div class="modal-dialog modal-sm">
+													<div class="modal-content">
+														<input type="password" class="form-control" id="" placeholder="이 글의 비밀번호를 입력하세요.">
+														<button type="submit" class="btn btn-info">확인</button>
+													</div>
+												</div>
+											</div> 
 										</td>
 										
 										

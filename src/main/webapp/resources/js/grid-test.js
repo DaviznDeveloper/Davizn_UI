@@ -38,7 +38,7 @@ $(function() {
     	                        '<h3 class="panel-title">Panel title</h3>' +
     	                        '</div>' +
     	                        '<div class="panel-body">' +
-    	                        'Panel contentdddddddddddddddddddddddddddddd' + num + 
+    	                        'Panel content' + num + 
     	                        '</div>' +
     	                        '</div>' +
     	                        '</li>', 2, 2]
@@ -53,22 +53,27 @@ $(function() {
     $("#widget_getvalue").click(function() {
     	var widget_del = $(".gridster > ul").children('.gs-w');
     	console.log(widget_del);
-        console.log(gridster.dom_to_coords(widget_del[0]));
-        console.log(gridster.dom_to_coords(widget_del[1]));
+        //console.log(gridster.dom_to_coords(widget_del[0]));
+        //console.log(gridster.dom_to_coords(widget_del[1]));
     	
     	var values = new Array();
-    	$.each(widget_del, function(index) {
-    		values += gridster.dom_to_coords(this);
+    	var valuesmap = new Array();
+    	$.each(widget_del, function(index,obj) {
+    		values[index] = obj;
     	});
-		console.log(values);
+		console.log(values.attr('name'));
     	//alert(widget_del[0]);
 //    	var widget_values;
-//    	$.each(widget_del, function(index, value) {
-//    		console.log(gridster.dom_to_coords(this));
-//    	});
+		
+    	$.each(values, function(index, obj) {
+    		console.log(index + " : " + obj.attr('name'));
+    		//valuesmap[index] = gridster.dom_to_coords(obj);
+    	});
+    	
+    	console.log(valuesmap);
     	
     	//gridster.dom_to_coords(widget_del);
-    	//console.log(gridster.dom_to_coords(widget_values));
+    	//console.log(gridster.dom_to_coords(widget_del));
     });
     
     $("#widget_delete").click(function() {

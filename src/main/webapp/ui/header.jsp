@@ -37,18 +37,27 @@
 		<!-- editTable -->
 		<link href="${pageContext.request.contextPath}/resources/lib/editTable/jquery.edittable.css" rel="stylesheet" />
 		
+		<!-- boardTable -->
+		<link href="${pageContext.request.contextPath}/resources/lib/boardtable/jquery.bootgrid.css" rel="stylesheet" />
+		
 		<!-- angular-gridster -->
-		<link href="${pageContext.request.contextPath}/resources/lib/angular-gridster/jquery.grid-test.css" rel="stylesheet" />
 		<link href="${pageContext.request.contextPath}/resources/lib/angular-gridster/style.css" rel="stylesheet" />
 		<link href="${pageContext.request.contextPath}/resources/lib/angular-gridster/grid-test.css" rel="stylesheet" />
 		
+		<!-- include summernote css/js-->
+		<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.css" rel="stylesheet">
+		
 		<!-- Custom CSS -->
 		<link href="${pageContext.request.contextPath}/resources/css/common.css" rel="stylesheet">
-		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/sideBar.css">
+		<link href="${pageContext.request.contextPath}/resources/css/sideBar.css" rel="stylesheet">
+		<link href="${pageContext.request.contextPath}/resources/css/board.css" rel="stylesheet">
+		<link href="${pageContext.request.contextPath}/resources/css/dashboard-style.css" rel="stylesheet">
 		
 		<!-- Custom Script -->
 		<script src="${pageContext.request.contextPath}/resources/js/common.js"></script>
 		<script src="${pageContext.request.contextPath}/resources/js/sideBar.js"></script>
+		
+		
 		
 		<!-- 연습 -->
 		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/test.css">
