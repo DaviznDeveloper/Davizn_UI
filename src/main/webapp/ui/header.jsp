@@ -31,14 +31,14 @@
 		<!-- font-awesome -->
 		<link href="${pageContext.request.contextPath}/resources/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 		
-		<!-- ipgrid -->
-		<link href="${pageContext.request.contextPath}/resources/lib/ipgrid-master/ip.grid.css" rel="stylesheet" />
+		<!-- footable -->
+		<link href="${pageContext.request.contextPath}/resources/lib/footable-bootstrap/css/footable.bootstrap.min.css" rel="stylesheet" />
 		
 		<!-- editTable -->
 		<link href="${pageContext.request.contextPath}/resources/lib/editTable/jquery.edittable.css" rel="stylesheet" />
 		
 		<!-- boardTable -->
-		<link href="${pageContext.request.contextPath}/resources/lib/boardtable/jquery.bootgrid.css" rel="stylesheet" />
+		<%-- <link href="${pageContext.request.contextPath}/resources/lib/boardtable/jquery.bootgrid.css" rel="stylesheet" /> --%>
 		
 		<!-- angular-gridster -->
 		<link href="${pageContext.request.contextPath}/resources/lib/angular-gridster/style.css" rel="stylesheet" />
