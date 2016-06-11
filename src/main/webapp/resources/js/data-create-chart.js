@@ -6,7 +6,93 @@ $(function() {
 			["칸 또는 줄에 있는 +버튼을 클릭하여 추가해보세요"]
 		]
 	});
+	
+	eTable.amchartReset();
+	
+	$("#edittable > table > thead > tr> th:last-child").click(function() {
 
+		var na = $("#edittable > table > tbody tr td").children('input');
+		var valuesHeader = $("#edittable > table > tbody tr:first-child td").children('input');
+		var category = $("#edittable > table > tbody tr td:first-child").children('input');
+		
+		console.log(row);
+		
+		console.log(na);
+		console.log(valuesHeader);
+		console.log(category);
+		
+		$(na).attr('disabled',true);
+		
+		// col 제목 부분 컨트롤
+		$.each(valuesHeader, function(index, obj) {
+			var values = '항목의 값' + index;
+			
+			if(index == 0) {
+				return true;
+			}
+			
+			$(this).val(values);
+		});
+		
+		// row 제목 부분 컨트롤
+		$.each(category, function(index, obj) {
+			var values = '항목' + index;
+			
+			if(index == 0) {
+				return true;
+			}
+			
+			$(this).val(values).css('font-weight','bold');
+		});
+		
+
+		
+		var row = [];
+		var val;
+		$.each(category, function(i, v) {
+			val = $("#edittable > table > tbody tr td").eq(i).children('input').val();
+			
+			row.push({
+				i: val
+			});
+			
+		});
+		
+		// 차트 데이터 형식으로 가공
+		/*
+		var amchart_provider = [];
+		var row, colTitle, colValues;
+		
+		$.each(valuesHeader, function(i, colObj) {
+			
+			if(i == 0) {
+				return true;
+			}
+			
+			colTitle = colObj.val();
+			
+			$.each(category, function(j, rowObj) {
+				
+				if(j == 0) {
+					return true;
+				}
+				
+				row = rowObj.val();
+				
+				amchart_provider.push({
+					"category": row,
+					colTitle: 
+					
+					
+				});
+				
+			});
+			
+		});
+		*/
+		
+	});
+	
 	// Load json data trough an ajax call
 	$('.loadjson').click(function () {
 		var _this = $(this),text = $(this).text();
@@ -26,7 +112,6 @@ $(function() {
 	// Reset table data
 	$('.reset').click(function () {
 		eTable.reset();
-		return false;
 	});
 
 	// Send JSON data trough an ajax call

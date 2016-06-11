@@ -66,9 +66,65 @@
 			$("#chartdiv-box").children().remove();
 			
 			$("#chartdiv-box").append().html(
-				"<div id='chartdiv'></div>" +
-				"<hr>"
+				'<div class="chartbox">' +
+				'<button type="button" class="close"><span aria-hidden="true">&times;</span></button>' +
+				'<div id="chartdiv"></div>' +
+				'<hr>' +
+				'</div>'
 			);
+			
+			$(".close").click(function() {
+				$(this).parent().remove();
+			});
+			
+			// Export data
+	        function exportData() {
+	            var row = 0, data = [], value;
+
+	            is_validated = true;
+
+	            $table.find('tbody tr').each(function () {
+
+	                row += 1;
+	                data[row] = [];
+
+	                $(this).find('td:not(:last-child)').each(function (i, v) {
+	                    if ( s.row_template && 'text' !== s.row_template[i] ){
+	                        var field = s.field_templates[s.row_template[i]],
+	                            el = $(this).find($(field.html).prop('tagName'));
+	                        
+	                        value = field.getValue(el);
+	                        if ( !s.validate_field(i, value, s.row_template[i], el) ){
+	                            is_validated = false;
+	                        }
+	                        data[row].push(value);
+	                    } else {
+	                        value = $(this).find('input[type="text"]').val();
+	                        if ( !s.validate_field(i, value, 'text', v) ){
+	                            is_validated = false;
+	                        }
+	                        data[row].push(value);
+	                    }
+	                });
+	                
+	            });
+	           
+			}
+			
+	        function generateChartData() {
+	            var chartData = [];
+	            jQuery('.data-row').each(function () {
+	                var category = jQuery(this).find('.data-category').val();
+	                var value = jQuery(this).find('.data-value').val();
+	                if (category != '') {
+	                    chartData.push({
+	                        category: category,
+	                        value: value
+	                    });
+	                }
+	            });
+	            return chartData;
+	        }
 			
 			// amcharts 그리기
 		    var chart = AmCharts.makeChart("chartdiv", {
@@ -77,34 +133,44 @@
 		        "dataDateFormat": "YYYY-MM-DD",
 		        "dataProvider": [{
 		            "date": "2013-11-30",
-		            "value": 104
+		            "value": 104,
+		            "value2": 200
 		        }, {
 		            "date": "2013-12-01",
-		            "value": 108
+		            "value": 108,
+		            "value2": 200
 		        }, {
 		            "date": "2013-12-02",
-		            "value": 103
+		            "value": 103,
+		            "value2": 200
 		        }, {
 		            "date": "2013-12-03",
-		            "value": 105
+		            "value": 105,
+		            "value2": 200
 		        }, {
 		            "date": "2013-12-04",
-		            "value": 136
+		            "value": 136,
+		            "value2": 200
 		        }, {
 		            "date": "2013-12-05",
-		            "value": 138
+		            "value": 138,
+		            "value2": 200
 		        }, {
 		            "date": "2013-12-06",
-		            "value": 113
+		            "value": 113,
+		            "value2": 200
 		        }, {
 		            "date": "2013-12-07",
-		            "value": 131
+		            "value": 131,
+		            "value2": 200
 		        }, {
 		            "date": "2013-12-08",
-		            "value": 114
+		            "value": 114,
+		            "value2": 200
 		        }, {
 		            "date": "2013-12-09",
-		            "value": 124
+		            "value": 124,
+		            "value2": 200
 		        }],
 		        "valueAxes": [{
 		            "maximum": 140,
@@ -115,19 +181,25 @@
 		                "fillColor": "#CC0000",
 		                "lineAlpha": 0,
 		                "toValue": 120,
-		                "value": 0
+		                "value": 0,
+		                "value2": 0
 		            }, {
 		                "fillAlpha": 0.1,
 		                "fillColor": "#0000cc",
 		                "lineAlpha": 0,
 		                "toValue": 200,
-		                "value": 120
+		                "value": 120,
+		                "value2": 120
 		            }]
 		        }],
 		        "graphs": [{
 		            "bullet": "round",
 		            "dashLength": 4,
 		            "valueField": "value"
+		        },{
+		            "bullet": "round",
+		            "dashLength": 4,
+		            "valueField": "value2"
 		        }],
 		        "chartCursor": {
 		            "cursorAlpha": 0,

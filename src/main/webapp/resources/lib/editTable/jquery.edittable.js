@@ -42,8 +42,11 @@
                 var field = s.field_templates[type];
                 return '<td>' + field.setValue(field.html, content)[0].outerHTML + '</td>';
             }
+            
             // Default
-            return '<td><input type="text" value="' + content.toString().replace(/"/g, "&quot;") + '" /></td>';
+            var result = '<td><input type="text" value="' + content.toString().replace(/"/g, "&quot;") + '" /></td>';
+            
+            return result;
         }
 
         // Build row
@@ -211,6 +214,8 @@
             });
 
             $table.find('.delcol').removeClass('disabled');
+            
+            amchartType();
 
             return false;
         });
@@ -233,6 +238,8 @@
             $table.find('tbody tr').each(function () {
                 $(this).find('td:eq(' + colid + ')').remove();
             });
+            
+            amchartType();
 
             return false;
         });
@@ -251,6 +258,8 @@
             $table.find('.delrow').removeClass('disabled');
 
             checkButtons();
+            
+            amchartType();
 
             return false;
         });
@@ -269,9 +278,45 @@
             $(this).closest('tr').remove();
 
             $table.find('.addrow').removeClass('disabled');
-
+            
+            amchartType();
+            
             return false;
         });
+        
+        // amchart type
+        function amchartType() {
+        	var valuesHeader = $("#edittable > table > tbody tr:first-child td").children('input');
+    		var category = $("#edittable > table > tbody tr td:first-child").children('input');
+    		
+    		// col title (coluum)
+    		$.each(valuesHeader, function(index, obj) {
+    			var values = '항목의 값' + index;
+    			
+    			if(index == 0) {
+    				return true;
+    			}
+    			
+    			$(this).attr('placeholder',values).val(values);
+    		});
+    		
+    		// row title (category)
+    		$.each(category, function(index, obj) {
+    			var values = '항목' + index;
+    			
+    			if(index == 0) {
+    				return true;
+    			}
+    			
+    			$(this).css('font-weight','bold').attr('placeholder',values).val(values);
+    		});
+        }
+        
+        // amchart reset-helper
+        function amchartReset() {
+        	var na = $("#edittable > table > tbody tr td").children('input');
+        	$(na).attr('disabled',true);
+        }
 
         // Select all content on click
         $table.on('click', 'input', function () {
@@ -299,11 +344,17 @@
             // Reset data to the first instance
             reset: function () {
                 fillTableData(reset);
+                amchartReset();
             },
             isValidated: function () {
                 return is_validated;
+            },
+            amchartReset: function() {
+            	amchartReset();
             }
         };
     };
+    
+    
 
 })(jQuery, this, 0);
