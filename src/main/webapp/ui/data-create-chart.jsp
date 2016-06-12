@@ -110,7 +110,7 @@
 	            });
 	           
 			}
-			
+			/* 
 	        function generateChartData() {
 	            var chartData = [];
 	            jQuery('.data-row').each(function () {
@@ -125,7 +125,7 @@
 	            });
 	            return chartData;
 	        }
-			
+			 */
 			// amcharts 그리기
 		    var chart = AmCharts.makeChart("chartdiv", {
 		        "type": "serial",
