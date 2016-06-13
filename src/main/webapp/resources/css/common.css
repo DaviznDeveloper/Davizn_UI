@@ -313,6 +313,33 @@ html, body {
 	border-bottom: 1px solid #eee;
 }
 
+/* note data */
+.note-title {
+	border: 0px;
+	box-shadow: none;
+	color: #2dbe60;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.note-title::-webkit-input-placeholder {
+	color: #2dbe60;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.note-title:-moz-placeholder {
+	color: #2dbe60;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.note-title::-ms-input-placeholder {
+	color: #2dbe60;
+	font-size: 18px;
+	font-weight: bold;
+}
+
 #chartdiv {
 	height: 400px;
 }

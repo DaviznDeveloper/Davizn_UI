@@ -24,7 +24,7 @@
 							
 							<hr>
 						
-							<input type="text" name="" class="form-control" placeholder="제목을 입력하세요">
+							<input type="text" name="" class="form-control input-lg note-title" placeholder="제목을 입력하세요">
 							
 							<br>
 							
@@ -54,6 +54,26 @@
 			enterMode: '2',
 			shiftEnterMode: '3',
 			height: '400px',
+			inlinesave : {
+					  postUrl: '/myurl',
+					  postData: {test: true},
+					  useJSON: false,
+
+					  // Callbacks...
+					  onSave: function(editor) { console.log('clicked save', editor); },                                   
+					  onSuccess: function(editor, data) { console.log('save successful', editor, data); },                 
+					  onFailure: function(editor, status, request) { console.log('save failed', editor, status, request); }
+					},
+			toolbar: 
+				[['Save','Print'],
+				 ['Font'],
+				 ['FontSize'],
+				 ['TextColor','BGColor','-','Bold','Italic','Underline','Strike'],
+				 ['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock','-','Outdent','Indent'],
+				 ['Subscript','Superscript','RemoveFormat'],
+				 ['NumberedList','BulletedList'],
+				 ['Link','Image'],
+				 ['Table','Chart','HorizontalRule']],
 			filebrowserImageUploadUrl: '${pageContext.request.contextPath}/resources/lib/ckeditor/upload.jsp?'
 				    					+'realUrl=http://localhost:8090/davizn/resources/upload/'
 				    					+'&realDir=upload'
@@ -63,7 +83,6 @@
 			var sendNoteData = CKEDITOR.instances.ckeditor.getData();
 			
 			console.log("데이터" + " : " + sendNoteData);
-			
 			
 		});
 		
