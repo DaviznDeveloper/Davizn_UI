@@ -340,6 +340,27 @@ html, body {
 	font-weight: bold;
 }
 
+.note-detail-date {
+	font-size: 80%;
+}
+
+.note-detail-option {
+	margin-bottom: 20px;
+}
+
+.note-detail-modi {
+	padding: 10px;
+	font-size: 25px;
+	color: #565656;
+	-webkit-transition: color 0.5s, -webkit-transform 0.3s;
+    transition: color 0.5s, transform 0.3s;
+}
+
+.note-detail-modi:hover {
+	color: #2dbe60;
+	
+}
+
 #chartdiv {
 	height: 400px;
 }
