@@ -19,10 +19,10 @@
 						
 						<form action="" method="post">
 							
-							<button type="button" class="btn btn-info sendNoteData">저장</button>
-							<button type="reset" class="btn btn-default">취소</button>
-							
-							<hr>
+							<div class="note-detail-option">
+								<span class="glyphicon glyphicon-save note-detail-modi" 
+									data-toggle="tooltip" title="노트 저장하기" aria-hidden="true"></span>
+							</div>
 						
 							<input type="text" name="" class="form-control input-lg note-title" placeholder="제목을 입력하세요">
 							

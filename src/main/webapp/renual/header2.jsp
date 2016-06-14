@@ -34,15 +34,8 @@
 		<!-- footable -->
 		<link href="${pageContext.request.contextPath}/resources/lib/footable-bootstrap/css/footable.bootstrap.min.css" rel="stylesheet" />
 		
-		<!-- editTable -->
-		<link href="${pageContext.request.contextPath}/resources/lib/editTable/jquery.edittable.css" rel="stylesheet" />
-		
-		<!-- boardTable -->
-		<%-- <link href="${pageContext.request.contextPath}/resources/lib/boardtable/jquery.bootgrid.css" rel="stylesheet" /> --%>
-		
-		<!-- angular-gridster -->
-		<link href="${pageContext.request.contextPath}/resources/lib/angular-gridster/style.css" rel="stylesheet" />
-		<link href="${pageContext.request.contextPath}/resources/lib/angular-gridster/grid-test.css" rel="stylesheet" />
+		<!-- gorl -->
+		<link href="${pageContext.request.contextPath}/resources/lib/gorl/progress.css" rel="stylesheet">
 		
 		<!-- include summernote css/js-->
 		<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.css" rel="stylesheet">
@@ -57,10 +50,6 @@
 		<script src="${pageContext.request.contextPath}/resources/js/common.js"></script>
 		<script src="${pageContext.request.contextPath}/resources/js/sideBar.js"></script>
 		
-		
-		
-		<!-- 연습 -->
-		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/test.css">
 
 	</head>
 	
