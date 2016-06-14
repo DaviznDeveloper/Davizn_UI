@@ -357,8 +357,31 @@ html, body {
 }
 
 .note-detail-modi:hover {
-	color: #2dbe60;
-	
+	color: #2dbe60;	
+}
+
+.sketchbook {
+	z-index: 2;
+}
+
+.sketchform {
+	z-index: 3;
+	position: fixed;
+	top: 300;
+	left: 100;
+	background: rgba(0, 0, 0, 0.7);
+	padding: 1em;
+	color:white;
+}
+
+.sketchform * {
+	margin-bottom: 1em;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+	.sketchform * {
+		font-size: 1.5em;
+	}
 }
 
 #chartdiv {
