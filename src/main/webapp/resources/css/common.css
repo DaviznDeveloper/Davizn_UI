@@ -63,6 +63,17 @@ html, body {
 	margin: 9px;
 }
 
+/* header */
+.notice-header-span {
+	display: inline-block;
+	max-width: 120px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: normal;
+	vertical-align: text-top;
+}
+
 
 /* content */
 .content-container {

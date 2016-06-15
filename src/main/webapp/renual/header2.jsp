@@ -174,14 +174,25 @@
 										<span class="badge h-menu-tran-badge-notice">2</span>
 			                        </a>
 			                        <ul class="dropdown-menu">
-			                           <li>
+			                           <li class="vertical-middle">
 			                               <a href="${pageContext.request.contextPath}/main-profile.navigation">
-			                                   type : 알림알림??
+			                                   <i class="fa fa-trophy" aria-hidden="true"></i>
+			                                   &nbsp;
+			                                   <span class="notice-header-span">3차 프로젝트가 종료되었습니다.</span>
 			                               </a>
 			                           </li>
-			                           <li>
+			                           <li class="vertical-middle">
 			                               <a href="${pageContext.request.contextPath}/main-profile.navigation">
-			                                   type : 알림알림??
+			                                   <i class="fa fa-calendar" aria-hidden="true"></i>
+			                                   &nbsp;
+			                                   <span class="notice-header-span">슬기 생일 3일 전</span>
+			                               </a>
+			                           </li>
+			                           <li class="vertical-middle">
+			                               <a href="${pageContext.request.contextPath}/main-profile.navigation">
+			                                   <i class="fa fa-users" aria-hidden="true"></i>
+			                                   &nbsp;
+			                                   <span class="notice-header-span">'Davizn'에 가입 승인되었습니다.</span>
 			                               </a>
 			                           </li>
 			                        </ul>
