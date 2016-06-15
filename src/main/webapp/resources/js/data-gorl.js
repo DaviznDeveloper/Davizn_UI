@@ -65,4 +65,32 @@ $(function() {
 		});
 		
 	});
+	
+	// gorl-detail-checklist
+	$(".gorl-detail-checkbox").change(function(){
+        if($(this).is(":checked")){
+            $(this).parent().css('background','#9cff80');
+            $(this).parent().css('border','1px solid #2dbe60');
+            $(this).parent().siblings().css('border','1px solid #2dbe60');
+            gorlChecking();
+        }else{
+        	$(this).parent().css('background','#eee');
+        	$(this).parent().css('border','1px solid #ccc');
+        	$(this).parent().siblings().css('border','1px solid #ccc');
+        	gorlChecking();
+        }
+	});
+	
+	// gorl-countdown
+	$("#CountDownTimer").TimeCircles();
+	
 });
+
+function gorlChecking() {
+	var checklist = $("input[type=checkbox]").length;
+	var checked = $("input:checked").length;
+	var gorlPercent = (checked - checklist) / 100;
+	
+	$(".pieProgress").attr('data-goal',gorlPercent);
+	
+}

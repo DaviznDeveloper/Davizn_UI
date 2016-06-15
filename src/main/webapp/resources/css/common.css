@@ -424,6 +424,15 @@ html, body {
 	right: 10px;
 }
 
+.gorl-detail-checklist {
+	background: #fff;
+}
+
+.gorl-detail-title {
+	font-weight: bold;
+	color: #2dbe60;
+}
+
 .sketchbook {
 	z-index: 2;
 }

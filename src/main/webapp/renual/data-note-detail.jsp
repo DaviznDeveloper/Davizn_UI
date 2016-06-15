@@ -23,16 +23,12 @@
 					<span class="glyphicon glyphicon-trash note-detail-modi" 
 						data-toggle="tooltip" title="노트 삭제하기" aria-hidden="true"></span>
 				</div>
+				
+				<hr>
 		
-				<div class="panel panel-success note-detail-content">
-					<div class="panel-heading note-detail-title">
-						<h3 class="panel-title">
-							가나다라&nbsp;&nbsp;&nbsp;&nbsp;
-							<small class="note-detail-date">2016.06.14</small>
-						</h3>
-					</div>
-					<div class="panel-body">Panel content</div>
-				</div>
+				<div class="pieProgress" role="progressbar" data-goal="27" aria-valuemin="0" data-step="1" aria-valuemax="100">
+			        <div class="progress__meter"><span class="pie_progress__number"></span></div>
+			    </div>
 		
 				<div id="push"></div>
 						

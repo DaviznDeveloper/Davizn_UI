@@ -42,6 +42,9 @@
 		<!-- gorl -->
 		<link href="${pageContext.request.contextPath}/resources/lib/gorl/progress.css" rel="stylesheet">
 		
+		<!-- TimeCircles -->
+		<link href="${pageContext.request.contextPath}/resources/lib/TimeCircles/inc/TimeCircles.css" rel="stylesheet">
+		
 		<!-- include summernote css/js-->
 		<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.css" rel="stylesheet">
 		
