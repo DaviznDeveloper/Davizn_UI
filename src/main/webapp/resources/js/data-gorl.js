@@ -14,7 +14,6 @@ $(function() {
 	
 	// bootstrap-datepicker
 	$('#datetimepicker1').datetimepicker();
-
 	$('#datetimepicker2').datetimepicker();
 	
 	$("#datetimepicker1").on("dp.change", function (e) {
@@ -25,8 +24,8 @@ $(function() {
     });
 	
 	$(".gorl-check-create").click(function() {
-		var gorlCheckList = $(".gorl-Check-List-Box").children('input');
-		
+		var gorlCheckList = $(".gorl-Check-List-Box").children();
+		console.log(gorlCheckList);
 		console.log(gorlCheckList.length);
 		
 		if(gorlCheckList.length < 10) {
@@ -81,16 +80,4 @@ $(function() {
         }
 	});
 	
-	// gorl-countdown
-	$("#CountDownTimer").TimeCircles();
-	
 });
-
-function gorlChecking() {
-	var checklist = $("input[type=checkbox]").length;
-	var checked = $("input:checked").length;
-	var gorlPercent = (checked - checklist) / 100;
-	
-	$(".pieProgress").attr('data-goal',gorlPercent);
-	
-}

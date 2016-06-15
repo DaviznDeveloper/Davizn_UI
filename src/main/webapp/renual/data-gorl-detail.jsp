@@ -133,8 +133,9 @@
 								<input type="checkbox" class="gorl-detail-checkbox">
 							</span>
 							<input type="text" name="gorl-detail-checklist" class="form-control gorl-detail-checklist" value="데이터 관리" readonly>
-							<br>
 						</div>
+						
+						<br>
 						
 						<div class="input-group">
 							<span class="input-group-addon">
@@ -170,6 +171,39 @@
 <script src="${pageContext.request.contextPath}/resources/lib/gorl/progress.min.js"></script>
 <script src="${pageContext.request.contextPath}/resources/lib/TimeCircles/inc/TimeCircles.js"></script>
 <script src="${pageContext.request.contextPath}/resources/js/data-gorl.js"></script>
-
+<script type="text/javascript">
+	$(function() {
+		// gorl-countdown
+		$("#CountDownTimer").TimeCircles();
+		
+		// gorl-detail-checklist
+		$(".gorl-detail-checkbox").change(function(){
+	        if($(this).is(":checked")){
+	            $(this).parent().css('background','#9cff80');
+	            $(this).parent().css('border','1px solid #2dbe60');
+	            $(this).parent().siblings().css('border','1px solid #2dbe60');
+	            gorlChecking();
+	        }else{
+	        	$(this).parent().css('background','#eee');
+	        	$(this).parent().css('border','1px solid #ccc');
+	        	$(this).parent().siblings().css('border','1px solid #ccc');
+	        	gorlChecking();
+	        }
+		});
+	});
+	
+	function gorlChecking() {
+		var checklist = $("input[type=checkbox]").length;
+		var checked = $("input:checked").length;
+		var gorlPercent = Math.round(eval((checked / checklist) * 100));
+		
+		console.log(checklist);
+		console.log(checked);
+		console.log(gorlPercent);
+		
+		$(".pieProgress").asPieProgress('go',gorlPercent);;
+		
+	}
+</script>
 
 <%@include file="/renual/footer.jsp"%>
