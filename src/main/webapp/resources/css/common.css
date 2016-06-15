@@ -390,6 +390,16 @@ html, body {
 	font-weight: bold;
 }
 
+.gorl-check-create {
+	-webkit-transition: color 0.5s, -webkit-transform 0.3s;
+    transition: color 0.5s, transform 0.3s;
+}
+
+.gorl-check-create:hover {
+	color: #2dbe60;
+	cursor: pointer;
+}
+
 .gorl-timeover {
 	color: #de3e6a;
 	font-weight: bold;
@@ -399,6 +409,20 @@ html, body {
 .gorl-atag:visited {text-decoration: none; color: #777;}
 .gorl-atag:hover {text-decoration: none; color: #777;}
 .gorl-atag:active {text-decoration: none; color: #777;}
+
+.gorl-list-title {
+	text-indent: 30px;
+}
+
+.gorl-check-input-box {
+	position: relative;
+}
+
+.gorl-check-input-box-close {
+	position: absolute;
+	top: 7px;
+	right: 10px;
+}
 
 .sketchbook {
 	z-index: 2;
