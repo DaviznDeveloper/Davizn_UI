@@ -53,7 +53,7 @@
 													<label class="col-sm-2 control-label gorl-check-create"><i class="fa fa-plus-circle" aria-hidden="true"></i> 목표 추가</label>
 													<div class="col-sm-10  gorl-Check-List-Box">
 														<div class="gorl-check-input-box">
-															<input type="text" name="gorlCheckList" class="form-control gorlCheckList margin-bottom-10"
+															<input type="text" name="gorlchecklist" class="form-control gorlCheckList margin-bottom-10"
 																placeholder="세부 목표를 입력하세요">
 															<button type="button" class="close gorl-check-input-box-close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 														</div>

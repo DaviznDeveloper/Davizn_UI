@@ -43,7 +43,7 @@
 								
 								<tbody>
 									
-									<tr>
+									<tr class="font-bold">
 										<td class="text-center">목표관리</td>
 										<td><a href="" class="notice-list-title">'3차 프로젝트' 목표가 종료되었습니다.</a></td>
 										<td class="text-center">2016.06.16</td>
@@ -54,7 +54,7 @@
 										</td>
 									</tr>
 									
-									<tr>
+									<tr class="font-bold">
 										<td class="text-center">일정관리</td>
 										<td><a href="" class="notice-list-title">'슬기 생일' 일정이 종료되었습니다.</a></td>
 										<td class="text-center">2016.06.16</td>
@@ -76,7 +76,7 @@
 										</td>
 									</tr>
 									
-									<tr>
+									<tr class="font-bold">
 										<td class="text-center">목표관리</td>
 										<td>
 											<a href="" class="notice-list-title">'KOSTA 112기' 목표가 종료되었습니다.</a>
@@ -88,6 +88,7 @@
 											</a>
 										</td>
 									</tr>
+									
 									
 								</tbody>
 								

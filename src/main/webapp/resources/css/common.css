@@ -655,4 +655,8 @@ html, body {
 .board-atag {
 	text-decoration: none;
 }
+
+.font-bold {
+	font-weight: bold;
+}
 /* 쉬운 공통 설정 */
