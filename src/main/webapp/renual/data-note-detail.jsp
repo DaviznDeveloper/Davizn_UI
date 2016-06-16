@@ -18,7 +18,7 @@
 				</ol>
 		
 				<div class="note-detail-option">
-					<span class="glyphicon glyphicon-pencil note-detail-modi" 
+					<span class="glyphicon glyphicon-pencil gorl-success-message-modi" 
 						data-toggle="tooltip" title="노트 수정하기" aria-hidden="true"></span>
 					<span class="glyphicon glyphicon-trash note-detail-modi" 
 						data-toggle="tooltip" title="노트 삭제하기" aria-hidden="true"></span>

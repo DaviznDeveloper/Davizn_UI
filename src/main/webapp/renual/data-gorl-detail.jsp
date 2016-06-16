@@ -18,13 +18,15 @@
 				</ol>
 		
 				<div class="note-detail-option">
-					<span class="" data-toggle="modal" data-target="#gorl-modi-modal">
+					<span class="gorl-detail-modi-btn" data-toggle="modal" data-target="#gorl-modi-modal">
 						<span class="glyphicon glyphicon-pencil note-detail-modi" 
 							data-toggle="tooltip" title="목표 수정하기" aria-hidden="true"></span>
 					</span>
 					
-					<span class="glyphicon glyphicon-trash note-detail-modi" 
-						data-toggle="tooltip" title="목표 삭제하기" aria-hidden="true"></span>
+					<a href="">
+						<span class="glyphicon glyphicon-trash note-detail-modi" 
+							data-toggle="tooltip" title="목표 삭제하기" aria-hidden="true"></span>
+					</a>
 				</div>
 				
 				<form action="" method="post" class="form-horizontal">
@@ -127,30 +129,80 @@
 					</div>
 				
 					<div class="col-sm-8 col-sm-offset-1">
-					
-						<div class="input-group">
-							<span class="input-group-addon">
-								<input type="checkbox" class="gorl-detail-checkbox">
-							</span>
-							<input type="text" name="gorl-detail-checklist" class="form-control gorl-detail-checklist" value="데이터 관리" readonly>
+						<div class="gorl-checklist-box">
+							<div class="input-group">
+								<span class="input-group-addon">
+									<input type="checkbox" class="gorl-detail-checkbox">
+								</span>
+								<input type="text" name="gorl-detail-checklist" class="form-control gorl-detail-checklist" value="데이터 관리" readonly>
+							</div>
+							
+							<div id="gorl-check-success" class="col-sm-12 height-30 margin-bottom-10 display-none">
+								<span class="col-sm-10 no-padding gorl-success-message"> 
+	         						3차 프로젝트 목표를 달성하였습니다.
+	         					</span>
+	         					<span class="col-sm-2 no-padding">
+	         						<span class="glyphicon glyphicon-pencil gorl-success-message-modi"
+										data-toggle="tooltip" title="내용 수정하기" aria-hidden="true"></span>
+								</span>
+							</div>
+							
+							<div id="gorl-check-success-mody-box" class="col-sm-12 no-padding margin-vertical display-none">
+								<textarea class="gorl-success-message-modi-area" name="" rows="2"></textarea>
+								<button type="button" class="btn btn-primary gorl-success-message-modi-save">저장</button>
+							</div>
 						</div>
 						
 						<br>
 						
-						<div class="input-group">
-							<span class="input-group-addon">
-								<input type="checkbox" class="gorl-detail-checkbox">
-							</span>
-							<input type="text" name="gorl-detail-checklist" class="form-control gorl-detail-checklist" value="그룹 기능" readonly>
+						<div class="gorl-checklist-box">
+							<div class="input-group">
+								<span class="input-group-addon">
+									<input type="checkbox" class="gorl-detail-checkbox">
+								</span>
+								<input type="text" name="gorl-detail-checklist" class="form-control gorl-detail-checklist" value="그룹 기능" readonly>
+							</div>
+							
+							<div id="gorl-check-success" class="col-sm-12 height-30 margin-bottom-10 display-none">
+								<span class="col-sm-10 no-padding gorl-success-message"> 
+	         						그룹 기능 목표를 달성하였습니다.
+	         					</span>
+	         					<span class="col-sm-2 no-padding">
+	         						<span class="glyphicon glyphicon-pencil gorl-success-message-modi"
+										data-toggle="tooltip" title="내용 수정하기" aria-hidden="true"></span>
+								</span>
+							</div>
+							
+							<div id="gorl-check-success-mody-box" class="col-sm-12 no-padding margin-vertical display-none">
+								<textarea class="gorl-success-message-modi-area" name="" rows="2"></textarea>
+								<button type="button" class="btn btn-primary gorl-success-message-modi-save">저장</button>
+							</div>
 						</div>
 						
 						<br>
 						
-						<div class="input-group">
-							<span class="input-group-addon">
-								<input type="checkbox" class="gorl-detail-checkbox">
-							</span>
-							<input type="text" name="gorl-detail-checklist" class="form-control gorl-detail-checklist" value="통계" readonly>
+						<div class="gorl-checklist-box">
+							<div class="input-group">
+								<span class="input-group-addon">
+									<input type="checkbox" class="gorl-detail-checkbox">
+								</span>
+								<input type="text" name="gorl-detail-checklist" class="form-control gorl-detail-checklist" value="통계" readonly>
+							</div>
+							
+							<div id="gorl-check-success" class="col-sm-12 height-30 margin-bottom-10 display-none">
+								<span class="col-sm-10 no-padding gorl-success-message"> 
+	         						통계 목표를 달성하였습니다.
+	         					</span>
+	         					<span class="col-sm-2 no-padding">
+	         						<span class="glyphicon glyphicon-pencil gorl-success-message-modi"
+										data-toggle="tooltip" title="내용 수정하기" aria-hidden="true"></span>
+								</span>
+							</div>
+							
+							<div id="gorl-check-success-mody-box" class="col-sm-12 no-padding margin-vertical display-none">
+								<textarea class="gorl-success-message-modi-area" name="" rows="2"></textarea>
+								<button type="button" class="btn btn-primary gorl-success-message-modi-save">저장</button>
+							</div>
 						</div>
 						
 					</div>
@@ -182,14 +234,33 @@
 	            $(this).parent().css('background','#9cff80');
 	            $(this).parent().css('border','1px solid #2dbe60');
 	            $(this).parent().siblings().css('border','1px solid #2dbe60');
+	            
+	         	$(this).attr('disabled','disabled');
+	            
+	         	$(this).parent().parent().siblings('#gorl-check-success').show();
+	         	
 	            gorlChecking();
-	        }else{
+	            
+	            $(".gorl-detail-modi-btn").fadeOut();
+	        
+	        } else {
 	        	$(this).parent().css('background','#eee');
 	        	$(this).parent().css('border','1px solid #ccc');
 	        	$(this).parent().siblings().css('border','1px solid #ccc');
 	        	gorlChecking();
 	        }
 		});
+		
+		$(".gorl-success-message-modi").click(function() {
+			$(this).parent().parent().siblings('#gorl-check-success-mody-box').show();
+			$(this).parent().parent().hide();
+		});
+		
+		$(".gorl-success-message-modi-save").click(function() {
+			$(this).parent().siblings('#gorl-check-success').show();
+			$(this).parent().hide();
+		});
+		
 	});
 	
 	function gorlChecking() {
@@ -202,7 +273,6 @@
 		console.log(gorlPercent);
 		
 		$(".pieProgress").asPieProgress('go',gorlPercent);;
-		
 	}
 </script>
 
