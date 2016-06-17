@@ -52,4 +52,9 @@ $(function() {
             down: "fa fa-arrow-down"
         }
     });
+	
+	$(".calender-priority").click(function() {
+		$(".calender-priority").children('input[type="radio"]').attr('checked',false);
+		$(this).children('input[type="radio"]').attr('checked',true);
+	});
 });

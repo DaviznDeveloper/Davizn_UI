@@ -507,6 +507,11 @@ html, body {
 	margin-left: 5%;
 }
 
+/* calendar */
+.calendar-star {
+	color: #fecf00;
+}
+
 .sketchbook {
 	z-index: 2;
 }

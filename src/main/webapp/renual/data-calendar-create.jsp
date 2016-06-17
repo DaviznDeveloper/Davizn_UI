@@ -89,11 +89,11 @@
 													<div id="notice-box" class="col-sm-10">
 														<div class='col-sm-2'>
 															<div id="calendar-notice-btn" class="pull-right margin-top-5">
-										                		<input type="checkbox" id="myswitch" value="checked"checked>
+										                		<input type="checkbox" id="myswitch" value="checked">
 											            	</div>
 											            </div>
 											             <div class='col-sm-10 input-group date' id='datetimepicker3'>
-											                <input type='text' class="form-control" />
+											                <input type='text' class="form-control" disabled>
 											                <span class="input-group-addon">
 											                    <i class="fa fa-bell-o" aria-hidden="true"></i>
 											                </span>
@@ -106,12 +106,51 @@
 												<div class="row">
 													<label for="inputscheduleContent" class="col-sm-2 control-label">우선순위</label>
 													<div class="col-sm-10">
-														<div class="btn-group" role="group" aria-label="First group">
-															<button type="button" class="btn btn-default">제일 중요해요!!</button>
-															<button type="button" class="btn btn-default">두번째로 중요해요!</button>
-															<button type="button" class="btn btn-default">세번째로 중요해요</button>
-															<button type="button" class="btn btn-default">4</button>
+														<div class="col-sm-2"></div>
+
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default calender-priority">
+																<input type="radio" name="priority" value="5" id="priority1" autocomplete="off">
+																<i class="fa fa-star calendar-star" aria-hidden="true"></i>
+																<i class="fa fa-star calendar-star" aria-hidden="true"></i>
+																<i class="fa fa-star calendar-star" aria-hidden="true"></i>
+																<i class="fa fa-star calendar-star" aria-hidden="true"></i>
+																<i class="fa fa-star calendar-star" aria-hidden="true"></i>
+															</label> 
+															<label class="btn btn-default calender-priority">
+																<input type="radio" name="priority" value="4" id="priority2" autocomplete="off">
+																<i class="fa fa-star calendar-star" aria-hidden="true"></i>
+																<i class="fa fa-star calendar-star" aria-hidden="true"></i>
+																<i class="fa fa-star calendar-star" aria-hidden="true"></i>
+																<i class="fa fa-star calendar-star" aria-hidden="true"></i>
+																<i class="fa fa-star-o" aria-hidden="true"></i>
+															</label>
+															<label class="btn btn-default calender-priority active">
+																<input type="radio" name="priority" value="3" id="priority3" autocomplete="off" checked>
+																<i class="fa fa-star calendar-star" aria-hidden="true"></i>
+																<i class="fa fa-star calendar-star" aria-hidden="true"></i>
+																<i class="fa fa-star calendar-star" aria-hidden="true"></i>
+																<i class="fa fa-star-o" aria-hidden="true"></i>
+																<i class="fa fa-star-o" aria-hidden="true"></i>
+															</label>
+															<label class="btn btn-default calender-priority">
+																<input type="radio" name="priority" value="2" id="priority4" autocomplete="off">
+																<i class="fa fa-star calendar-star" aria-hidden="true"></i>
+																<i class="fa fa-star calendar-star" aria-hidden="true"></i>
+																<i class="fa fa-star-o" aria-hidden="true"></i>
+																<i class="fa fa-star-o" aria-hidden="true"></i>
+																<i class="fa fa-star-o" aria-hidden="true"></i>
+															</label>
+															<label class="btn btn-default calender-priority">
+																<input type="radio" name="priority" value="1" id="priority5" autocomplete="off">
+																<i class="fa fa-star calendar-star" aria-hidden="true"></i>
+																<i class="fa fa-star-o" aria-hidden="true"></i>
+																<i class="fa fa-star-o" aria-hidden="true"></i>
+																<i class="fa fa-star-o" aria-hidden="true"></i>
+																<i class="fa fa-star-o" aria-hidden="true"></i>
+															</label>
 														</div>
+														
 													</div>
 												</div>
 												
@@ -136,7 +175,34 @@
 					
 							<hr>
 
-							
+							<a href="" class="gorl-atag">
+								<div class="panel panel-success">
+									<div class="panel-body">
+										<div class="col-sm-12 no-padding">
+											<div class="col-md-1 col-sm-2 no-padding">
+												<div class="pieProgress" role="progressbar" data-goal="27" aria-valuemin="0" data-step="1" aria-valuemax="100">
+											        <div class="progress__meter"><span class="pie_progress__number"></span></div>
+											    </div>
+											</div>
+											<div class="col-sm-6 pull-left margin-top-10">
+												<h3 class="gorl-list-title">3차 프로젝트</h3>
+											</div>
+											<div class="col-sm-5 pull-left">
+												<h4>
+													<span class="glyphicon glyphicon-check gorl-checklist" aria-hidden="true"></span>
+													<span class="gorl-checklist">3</span> 개의 세부 목표
+												</h4>
+											</div>
+											<div class="col-sm-5 pull-left">
+												<h4>
+													<span class="glyphicon glyphicon-time gorl-timeover" aria-hidden="true"></span>
+													<span class="gorl-timeover">2016. 06. 24</span> 까지 완료
+												</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
 							
 							<br>
 				
