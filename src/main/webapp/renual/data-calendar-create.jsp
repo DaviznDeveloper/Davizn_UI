@@ -85,12 +85,33 @@
 												<br>
 												
 												<div class="row">
-													<label for="inputGorlTitle" class="col-sm-2 control-label">일정 날짜</label>
-													<div class="col-sm-10">
-														<label class="col-sm-2 control-label">알림 설정</label>
-														<div class='col-sm-10'>
-										                	<input type="checkbox" id="myswitch" checked value="checked">
+													<label for="inputGorlTitle" class="col-sm-2 control-label">알림 설정</label>
+													<div id="notice-box" class="col-sm-10">
+														<div class='col-sm-2'>
+															<div id="calendar-notice-btn" class="pull-right margin-top-5">
+										                		<input type="checkbox" id="myswitch" value="checked"checked>
+											            	</div>
 											            </div>
+											             <div class='col-sm-10 input-group date' id='datetimepicker3'>
+											                <input type='text' class="form-control" />
+											                <span class="input-group-addon">
+											                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+											                </span>
+											            </div>
+													</div>
+												</div>
+												
+												<br>
+												
+												<div class="row">
+													<label for="inputscheduleContent" class="col-sm-2 control-label">우선순위</label>
+													<div class="col-sm-10">
+														<div class="btn-group" role="group" aria-label="First group">
+															<button type="button" class="btn btn-default">제일 중요해요!!</button>
+															<button type="button" class="btn btn-default">두번째로 중요해요!</button>
+															<button type="button" class="btn btn-default">세번째로 중요해요</button>
+															<button type="button" class="btn btn-default">4</button>
+														</div>
 													</div>
 												</div>
 												

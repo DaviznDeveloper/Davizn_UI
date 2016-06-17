@@ -13,7 +13,6 @@ $(function() {
 	$(".pieProgress").asPieProgress("start");
 	
 	var d = new Date();
-
 	var month = d.getMonth()+1;
 	var day = d.getDate();
 
@@ -21,6 +20,11 @@ $(function() {
 	(month<10 ? '0' : '') + month + '/' +
 	(day<10 ? '0' : '') + day;
 
+	var Now = new Date();
+	var NowTime = Now.getHours();
+	NowTime += ':' + Now.getMinutes();
+	NowTime += ':' + Now.getSeconds();
+	
 	console.log(output);
 	
 	//$("#datetimeset1").val(output + " 00:01:00");
@@ -28,7 +32,7 @@ $(function() {
 	// bootstrap-datepicker
 	$('#datetimepicker1').datetimepicker({
 		format: 'MM/DD/YYYY HH:mm',
-		defaultDate: output + " 00:01:00"
+		defaultDate: output + " " + NowTime
 	});
 	$('#datetimepicker2').datetimepicker({
 		format: 'MM/DD/YYYY HH:mm',
