@@ -67,7 +67,7 @@
 													<div class="col-sm-10">
 														<label class="col-sm-2 control-label">시작일</label>
 														<div class='col-sm-10 input-group date' id='datetimepicker1'>
-											                <input type='text' name="gorlStartDate" class="form-control" placeholder="시작일을 설정하세요(우측의 달력 버튼)">
+											                <input type='text' id="datetimeset1" name="gorlStartDate" class="form-control" placeholder="시작일을 설정하세요(우측의 달력 버튼)">
 											                <span class="input-group-addon">
 											                    <span class="glyphicon glyphicon-calendar"></span>
 											                </span>
@@ -77,7 +77,7 @@
 											            
 											            <label class="col-sm-2 control-label">종료일</label>
 											            <div class='col-sm-10 input-group date' id='datetimepicker2'>
-											                <input type='text' name="gorlEndDate" class="form-control" placeholder="종료일을 설정하세요(우측의 달력 버튼)">
+											                <input type='text' id="datetimeset2" name="gorlEndDate" class="form-control" placeholder="종료일을 설정하세요(우측의 달력 버튼)">
 											                <span class="input-group-addon">
 											                    <span class="glyphicon glyphicon-calendar"></span>
 											                </span>

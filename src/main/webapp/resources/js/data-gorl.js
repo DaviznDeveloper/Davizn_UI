@@ -12,9 +12,28 @@ $(function() {
 	
 	$(".pieProgress").asPieProgress("start");
 	
+	var d = new Date();
+
+	var month = d.getMonth()+1;
+	var day = d.getDate();
+
+	var output = d.getFullYear() + '/' +
+	(month<10 ? '0' : '') + month + '/' +
+	(day<10 ? '0' : '') + day;
+
+	console.log(output);
+	
+	//$("#datetimeset1").val(output + " 00:01:00");
+	
 	// bootstrap-datepicker
-	$('#datetimepicker1').datetimepicker();
-	$('#datetimepicker2').datetimepicker();
+	$('#datetimepicker1').datetimepicker({
+		format: 'MM/DD/YYYY HH:mm',
+		defaultDate: output + " 00:01:00"
+	});
+	$('#datetimepicker2').datetimepicker({
+		format: 'MM/DD/YYYY HH:mm',
+		defaultDate: output + " 23:59:00"
+	});
 	
 	$("#datetimepicker1").on("dp.change", function (e) {
         $('#datetimepicker2').data("DateTimePicker").minDate(e.date);

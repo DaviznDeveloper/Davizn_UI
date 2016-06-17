@@ -85,6 +85,18 @@
 												<br>
 												
 												<div class="row">
+													<label for="inputGorlTitle" class="col-sm-2 control-label">일정 날짜</label>
+													<div class="col-sm-10">
+														<label class="col-sm-2 control-label">알림 설정</label>
+														<div class='col-sm-10'>
+										                	<input type="checkbox" id="myswitch" checked value="checked">
+											            </div>
+													</div>
+												</div>
+												
+												<br>
+												
+												<div class="row">
 													
 												</div>
 												
@@ -118,6 +130,7 @@
 		</div>
 
 <script src="${pageContext.request.contextPath}/resources/lib/gorl/progress.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/js/data-gorl.js"></script>
+<script src="${pageContext.request.contextPath}/resources/lib/switch/switchable.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/calendar.js"></script>
 
 <%@include file="/renual/footer.jsp"%>

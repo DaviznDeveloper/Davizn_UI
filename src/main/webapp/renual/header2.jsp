@@ -48,6 +48,9 @@
 		<!-- include summernote css/js-->
 		<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.css" rel="stylesheet">
 		
+		<!-- switch -->
+		<link href="${pageContext.request.contextPath}/resources/lib/switch/switchable.css" rel="stylesheet">
+		
 		<!-- Custom CSS -->
 		<link href="${pageContext.request.contextPath}/resources/css/common.css" rel="stylesheet">
 		<link href="${pageContext.request.contextPath}/resources/css/sideBar.css" rel="stylesheet">
