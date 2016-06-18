@@ -527,6 +527,25 @@ html, body {
 	color: #404040;
 }
 
+.font-icon-green {
+	line-height: 30px;
+	font-size: 25px;
+	padding: 10px;
+	color: #565656;
+	vertical-align: middle;
+	-webkit-transition: color 0.5s, -webkit-transform 0.3s;
+    transition: color 0.5s, transform 0.3s;
+}
+
+.font-icon-green:hover {
+	color: #2dbe60;
+	cursor: pointer;
+}
+
+.calendar-delete {
+	
+}
+
 .sketchbook {
 	z-index: 2;
 }
