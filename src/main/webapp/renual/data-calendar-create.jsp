@@ -180,27 +180,33 @@
 								<h5>진행중인 일정</h5>
 															
 								<!-- foreach -->
-								<div class="panel panel-success">
-									<div class="panel-body">
-										
-										<div class="col-sm-9 no-padding">
-											<div class="calendar-title word-ellipsis">
-												3차 프로젝트 종료
+								<a href="">
+									<div class="panel panel-info">
+										<div class="panel-body">
+											
+											<div class="col-sm-9 no-padding">
+												<div class="calendar-title word-ellipsis">
+													3차 프로젝트 종료
+												</div>
+												
+												<div class="calendar-date word-ellipsis">
+													2016.06.18 ~ 2016.06.24
+												</div>
 											</div>
 											
-											<div class="calendar-date">
-												2016.06.18 ~ 2016.06.24
+											<div class="col-sm-3 no-padding margin-top-10">
+												<div class="text-center">
+													<i class="fa fa-star calendar-star" aria-hidden="true"></i>
+													<i class="fa fa-star calendar-star" aria-hidden="true"></i>
+													<i class="fa fa-star calendar-star" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+												</div>
 											</div>
+											
 										</div>
-										
-										<div class="col-sm-3 no-padding">
-											<div id="calendar-notice-btn" class="pull-right margin-top-5">
-						                		<input type="checkbox" class="myswitch-list" value="checked">
-							            	</div>
-										</div>
-										
 									</div>
-								</div>									
+								</a>						
 								<!-- foreach -->
 								
 							</div>
@@ -209,21 +215,33 @@
 								<h5>완료된 일정</h5>
 															
 								<!-- foreach -->
-								<div class="panel panel-danger">
-									<div class="panel-body">
-										
-										<div class="col-sm-12 no-padding">
-											<div class="calendar-title word-ellipsis">
-												3차 프로젝트 종료aaaaaaaaaaaaaaa
+								<a href="">
+									<div class="panel panel-danger">
+										<div class="panel-body">
+											
+											<div class="col-sm-9 no-padding">
+												<div class="calendar-title word-ellipsis">
+													3차 프로젝트 종료
+												</div>
+												
+												<div class="calendar-date word-ellipsis">
+													2016.06.18 ~ 2016.06.24
+												</div>
 											</div>
 											
-											<div class="calendar-date">
-												2016.06.18 ~ 2016.06.24
+											<div class="col-sm-3 no-padding margin-top-10">
+												<div class="text-center">
+													<i class="fa fa-star calendar-star" aria-hidden="true"></i>
+													<i class="fa fa-star calendar-star" aria-hidden="true"></i>
+													<i class="fa fa-star calendar-star" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+												</div>
 											</div>
+											
 										</div>
-										
-									</div>
-								</div>									
+									</div>			
+								</a>						
 								<!-- foreach -->
 								
 							</div>

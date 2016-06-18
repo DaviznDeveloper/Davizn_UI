@@ -14,8 +14,6 @@ $(function() {
 	
 	$('.myswitch-list').switchable({
 		
-		
-		
 	});
 	
 	var d = new Date();
