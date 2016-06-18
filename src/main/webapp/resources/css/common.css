@@ -508,8 +508,23 @@ html, body {
 }
 
 /* calendar */
+#inputscheduleContent {
+	resize: none;
+}
+
 .calendar-star {
 	color: #fecf00;
+}
+
+.calendar-title {
+	font-size: 18px;
+	font-weight: bold;
+	color: #404040;
+}
+
+.calendar-date {
+	font-size: 14px;
+	color: #404040;
 }
 
 .sketchbook {
@@ -667,5 +682,11 @@ html, body {
 
 .font-bold {
 	font-weight: bold;
+}
+
+.word-ellipsis {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: normal;
 }
 /* 쉬운 공통 설정 */

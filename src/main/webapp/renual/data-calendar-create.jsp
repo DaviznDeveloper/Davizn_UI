@@ -175,34 +175,58 @@
 					
 							<hr>
 
-							<a href="" class="gorl-atag">
+							
+							<div class="col-sm-6">
+								<h5>진행중인 일정</h5>
+															
+								<!-- foreach -->
 								<div class="panel panel-success">
 									<div class="panel-body">
-										<div class="col-sm-12 no-padding">
-											<div class="col-md-1 col-sm-2 no-padding">
-												<div class="pieProgress" role="progressbar" data-goal="27" aria-valuemin="0" data-step="1" aria-valuemax="100">
-											        <div class="progress__meter"><span class="pie_progress__number"></span></div>
-											    </div>
+										
+										<div class="col-sm-9 no-padding">
+											<div class="calendar-title word-ellipsis">
+												3차 프로젝트 종료
 											</div>
-											<div class="col-sm-6 pull-left margin-top-10">
-												<h3 class="gorl-list-title">3차 프로젝트</h3>
-											</div>
-											<div class="col-sm-5 pull-left">
-												<h4>
-													<span class="glyphicon glyphicon-check gorl-checklist" aria-hidden="true"></span>
-													<span class="gorl-checklist">3</span> 개의 세부 목표
-												</h4>
-											</div>
-											<div class="col-sm-5 pull-left">
-												<h4>
-													<span class="glyphicon glyphicon-time gorl-timeover" aria-hidden="true"></span>
-													<span class="gorl-timeover">2016. 06. 24</span> 까지 완료
-												</h4>
+											
+											<div class="calendar-date">
+												2016.06.18 ~ 2016.06.24
 											</div>
 										</div>
+										
+										<div class="col-sm-3 no-padding">
+											<div id="calendar-notice-btn" class="pull-right margin-top-5">
+						                		<input type="checkbox" class="myswitch-list" value="checked">
+							            	</div>
+										</div>
+										
 									</div>
-								</div>
-							</a>
+								</div>									
+								<!-- foreach -->
+								
+							</div>
+							
+							<div class="col-sm-6">
+								<h5>완료된 일정</h5>
+															
+								<!-- foreach -->
+								<div class="panel panel-danger">
+									<div class="panel-body">
+										
+										<div class="col-sm-12 no-padding">
+											<div class="calendar-title word-ellipsis">
+												3차 프로젝트 종료aaaaaaaaaaaaaaa
+											</div>
+											
+											<div class="calendar-date">
+												2016.06.18 ~ 2016.06.24
+											</div>
+										</div>
+										
+									</div>
+								</div>									
+								<!-- foreach -->
+								
+							</div>
 							
 							<br>
 				
