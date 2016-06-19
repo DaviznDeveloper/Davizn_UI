@@ -387,109 +387,141 @@
 
 										<br>
 
-										<div class="group-info-gorl-persent">전체 달성률</div>
-										<div class="progress">
-											<div class="progress-bar progress-bar-info" role="progressbar"
-												aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
-												style="width: 20%">20%
+										<div class="col-sm-12 no-padding margin-bottom-10">
+											<div class="group-info-gorl-persent">전체 달성률</div>
+											<div class="progress">
+												<div class="progress-bar progress-bar-info" role="progressbar"
+													aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+													style="width: 20%">20%
+												</div>
 											</div>
 										</div>
 				
 										<br>
-										<div class="list-group">
-											<a href="#" class="list-group-item">
-												<span class="badge">7</span>
-												<i class="fa fa-check-square-o profile-font-icon" aria-hidden="true"></i>
-												&nbsp;&nbsp;내 데이터 관리
-											</a>
-											<a href="#" class="list-group-item">
-												<span class="badge">38</span>
-												<i class="fa fa-check-square-o profile-font-icon" aria-hidden="true"></i>
-												&nbsp;&nbsp;내 그룹
-											</a>
-											<a href="#" class="list-group-item">
-												<span class="badge">1</span>
-												<i class="fa fa-check-square-o profile-font-icon" aria-hidden="true"></i>
-												&nbsp;&nbsp;커뮤니티
-											</a>
-											<a href="#" class="list-group-item">
-												<span class="badge">1</span>
-												<i class="fa fa-check-square-o profile-font-icon" aria-hidden="true"></i>
-												&nbsp;&nbsp;1:1 문의&건의
-											</a>
-											<a href="#" class="list-group-item">
-												<span class="badge">3</span>
-												<i class="fa fa-check-square-o profile-font-icon" aria-hidden="true"></i>
-												&nbsp;&nbsp;알림
-											</a>
-											<a href="#" class="list-group-item">
-												<span class="badge">3</span>
-												<i class="fa fa-check-square-o profile-font-icon" aria-hidden="true"></i>
-												&nbsp;&nbsp;쪽지 
+										
+										<div class="col-sm-12 no-padding margin-bottom-10">
+											<a href="">
+												<i class="fa fa-chevron-circle-right" aria-hidden="true"></i> 그룹 목표 페이지로 이동
 											</a>
 										</div>
+										
+										<div class="col-sm-12 no-padding">
+											<div class="list-group">
+												<a href="#" class="list-group-item">
+													<span class="badge">7</span>
+													<i class="fa fa-check-square-o profile-font-icon" aria-hidden="true"></i>
+													&nbsp;&nbsp;사용자 요구사항 정의서
+												</a>
+												<a href="#" class="list-group-item">
+													<span class="badge">38</span>
+													<i class="fa fa-check-square-o profile-font-icon" aria-hidden="true"></i>
+													&nbsp;&nbsp;유스케이스 명세서
+												</a>
+												<a href="#" class="list-group-item">
+													<span class="badge">1</span>
+													<i class="fa fa-check-square-o profile-font-icon" aria-hidden="true"></i>
+													&nbsp;&nbsp;시스템 요구사항 명세서
+												</a>
+												<a href="#" class="list-group-item">
+													<span class="badge">1</span>
+													<i class="fa fa-check-square-o profile-font-icon" aria-hidden="true"></i>
+													&nbsp;&nbsp;클래스 설계서
+												</a>
+												<a href="#" class="list-group-item">
+													<span class="badge">3</span>
+													<i class="fa fa-check-square-o profile-font-icon" aria-hidden="true"></i>
+													&nbsp;&nbsp;엔티티 관계 모형 정의서
+												</a>
+												<a href="#" class="list-group-item">
+													<span class="badge">3</span>
+													<i class="fa fa-check-square-o profile-font-icon" aria-hidden="true"></i>
+													&nbsp;&nbsp;데이터베이스 설계서
+												</a>
+											</div>
+										</div>
+										
 									</div>
 									
 									<div role="tabpanel" class="tab-pane" id="groupData">
 										<br>
-										<div class="list-group">
-											<a href="#" class="list-group-item">
-												<span class="badge">7</span>
-												<i class="fa fa-file-o profile-font-icon" aria-hidden="true"></i>
-												&nbsp;&nbsp;kosta 112기 활동 내역
-											</a>
-											<a href="#" class="list-group-item">
-												<span class="badge">4</span>
-												<i class="fa fa-calendar profile-font-icon" aria-hidden="true"></i>
-												&nbsp;&nbsp;java 일일 강의 내용
-											</a>
-											<a href="#" class="list-group-item">
-												<span class="badge">6</span>
-												<i class="fa fa-trophy profile-font-icon" aria-hidden="true"></i>
-												&nbsp;&nbsp;web - client 일일 강의 내용
-											</a>
-											<a href="#" class="list-group-item">
-												<span class="badge">0</span>
-												<i class="fa fa-file-o profile-font-icon" aria-hidden="true"></i>
-												&nbsp;&nbsp;Database
-											</a>
-											<a href="#" class="list-group-item">
-												<span class="badge">0</span>
-												<i class="fa fa-file-o profile-font-icon" aria-hidden="true"></i>
-												&nbsp;&nbsp;Spring
+										
+										<div class="col-sm-12 no-padding margin-bottom-10">
+											<a href="">
+												<i class="fa fa-chevron-circle-right" aria-hidden="true"></i> 그룹 데이터 페이지로 이동
 											</a>
 										</div>
+										
+										<div class="col-sm-12 no-padding margin-bottom-10">
+											<div class="list-group">
+												<a href="#" class="list-group-item">
+													<span class="badge">7</span>
+													<i class="fa fa-file-o profile-font-icon" aria-hidden="true"></i>
+													&nbsp;&nbsp;kosta 112기 활동 내역
+												</a>
+												<a href="#" class="list-group-item">
+													<span class="badge">4</span>
+													<i class="fa fa-calendar profile-font-icon" aria-hidden="true"></i>
+													&nbsp;&nbsp;java 일일 강의 내용
+												</a>
+												<a href="#" class="list-group-item">
+													<span class="badge">6</span>
+													<i class="fa fa-trophy profile-font-icon" aria-hidden="true"></i>
+													&nbsp;&nbsp;web - client 일일 강의 내용
+												</a>
+												<a href="#" class="list-group-item">
+													<span class="badge">0</span>
+													<i class="fa fa-file-o profile-font-icon" aria-hidden="true"></i>
+													&nbsp;&nbsp;Database
+												</a>
+												<a href="#" class="list-group-item">
+													<span class="badge">0</span>
+													<i class="fa fa-file-o profile-font-icon" aria-hidden="true"></i>
+													&nbsp;&nbsp;Spring
+												</a>
+											</div>
+										</div>
+										
 									</div>
 									
 									<div role="tabpanel" class="tab-pane" id="groupDataHistory">
 										<br>
-										<div class="list-group">
-											<a href="#" class="list-group-item">
-												<span class="badge">7</span>
-												<i class="fa fa-code-fork profile-font-icon" aria-hidden="true"></i>
-												&nbsp;&nbsp;kosta 112기 활동 내역
-											</a>
-											<a href="#" class="list-group-item">
-												<span class="badge">4</span>
-												<i class="fa fa-code-fork profile-font-icon" aria-hidden="true"></i>
-												&nbsp;&nbsp;java 일일 강의 내용
-											</a>
-											<a href="#" class="list-group-item">
-												<span class="badge">6</span>
-												<i class="fa fa-code-fork profile-font-icon" aria-hidden="true"></i>
-												&nbsp;&nbsp;web - client 일일 강의 내용
-											</a>
-											<a href="#" class="list-group-item">
-												<span class="badge">0</span>
-												<i class="fa fa-code-fork profile-font-icon" aria-hidden="true"></i>
-												&nbsp;&nbsp;Database
-											</a>
-											<a href="#" class="list-group-item">
-												<span class="badge">0</span>
-												<i class="fa fa-code-fork profile-font-icon" aria-hidden="true"></i>
-												&nbsp;&nbsp;Spring
+										
+										<div class="col-sm-12 no-padding margin-bottom-10">
+											<a href="">
+												<i class="fa fa-chevron-circle-right" aria-hidden="true"></i> 그룹 데이터 히스토리 페이지로 이동
 											</a>
 										</div>
+										
+										<div class="col-sm-12 no-padding margin-bottom-10">
+											<div class="list-group">
+												<a href="#" class="list-group-item">
+													<span class="badge">7</span>
+													<i class="fa fa-code-fork profile-font-icon" aria-hidden="true"></i>
+													&nbsp;&nbsp;kosta 112기 활동 내역
+												</a>
+												<a href="#" class="list-group-item">
+													<span class="badge">4</span>
+													<i class="fa fa-code-fork profile-font-icon" aria-hidden="true"></i>
+													&nbsp;&nbsp;java 일일 강의 내용
+												</a>
+												<a href="#" class="list-group-item">
+													<span class="badge">6</span>
+													<i class="fa fa-code-fork profile-font-icon" aria-hidden="true"></i>
+													&nbsp;&nbsp;web - client 일일 강의 내용
+												</a>
+												<a href="#" class="list-group-item">
+													<span class="badge">0</span>
+													<i class="fa fa-code-fork profile-font-icon" aria-hidden="true"></i>
+													&nbsp;&nbsp;Database
+												</a>
+												<a href="#" class="list-group-item">
+													<span class="badge">0</span>
+													<i class="fa fa-code-fork profile-font-icon" aria-hidden="true"></i>
+													&nbsp;&nbsp;Spring
+												</a>
+											</div>
+										</div>
+										
 									</div>
 									
 								</div>
