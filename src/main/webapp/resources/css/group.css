@@ -51,3 +51,15 @@
 	font-size: 18px;
 	font-weight: bold;
 }
+
+.group-info-member-selected {
+	margin-left: 16px;
+}
+
+#group-info-member-header {
+	width: 50%;
+}
+
+.group-info-member-search-check {
+	width: 20%;
+}

@@ -51,7 +51,6 @@
 		<link href="${pageContext.request.contextPath}/resources/css/common.css" rel="stylesheet">
 		<link href="${pageContext.request.contextPath}/resources/css/sideBar.css" rel="stylesheet">
 		<link href="${pageContext.request.contextPath}/resources/css/board.css" rel="stylesheet">
-		<link href="${pageContext.request.contextPath}/resources/css/dashboard-style.css" rel="stylesheet">
 		<link href="${pageContext.request.contextPath}/resources/css/group.css" rel="stylesheet">
 		
 		<!-- jQuery -->
