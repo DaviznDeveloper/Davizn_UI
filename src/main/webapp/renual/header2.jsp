@@ -19,46 +19,53 @@
 		
 		<title>Davizn - 데이터 관리형 도구 사이트</title>
 		
-		<!-- jQuery -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 		
-  		<!-- jQery-ui -->
+  		<!-- css - jQery-ui -->
   		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 		
-		<!-- Bootstrap -->
+		<!-- css - Bootstrap -->
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  		
-  		<!-- Bootstrap-datepicker -->
+		
+  		<!-- css - Bootstrap-datepicker -->
   		<link href="${pageContext.request.contextPath}/resources/lib/datetimepicker/build/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.2/moment-with-locales.min.js"></script>
-		<script src="${pageContext.request.contextPath}/resources/lib/datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
   		
-		<!-- font-awesome -->
+		<!-- css - font-awesome -->
 		<link href="${pageContext.request.contextPath}/resources/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 		
-		<!-- footable -->
+		<!-- css - footable -->
 		<link href="${pageContext.request.contextPath}/resources/lib/footable-bootstrap/css/footable.bootstrap.min.css" rel="stylesheet" />
 		
-		<!-- gorl -->
+		<!-- css - gorl -->
 		<link href="${pageContext.request.contextPath}/resources/lib/gorl/progress.css" rel="stylesheet">
 		
-		<!-- TimeCircles -->
+		<!-- css - TimeCircles -->
 		<link href="${pageContext.request.contextPath}/resources/lib/TimeCircles/inc/TimeCircles.css" rel="stylesheet">
 		
-		<!-- include summernote css/js-->
+		<!-- css - include summernote css/js-->
 		<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.css" rel="stylesheet">
 		
-		<!-- switch -->
+		<!-- css - switch -->
 		<link href="${pageContext.request.contextPath}/resources/lib/switch/switchable.css" rel="stylesheet">
 		
-		<!-- Custom CSS -->
+		<!-- css - Custom CSS -->
 		<link href="${pageContext.request.contextPath}/resources/css/common.css" rel="stylesheet">
 		<link href="${pageContext.request.contextPath}/resources/css/sideBar.css" rel="stylesheet">
 		<link href="${pageContext.request.contextPath}/resources/css/board.css" rel="stylesheet">
 		<link href="${pageContext.request.contextPath}/resources/css/dashboard-style.css" rel="stylesheet">
 		<link href="${pageContext.request.contextPath}/resources/css/group.css" rel="stylesheet">
+		
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		
+  		<!-- jQery-ui -->
+  		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+		
+		<!-- Bootstrap -->
+  		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  		
+  		<!-- Bootstrap-datepicker -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.2/moment-with-locales.min.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/lib/datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
 		
 		<!-- Custom Script -->
 		<script src="${pageContext.request.contextPath}/resources/js/common.js"></script>
