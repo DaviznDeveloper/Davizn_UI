@@ -1,5 +1,12 @@
 @CHARSET "UTF-8";
 
+/* a 태그 */
+a:link { color: #777; }
+a:visited { color: #777; }
+a:hover { color: #777; }
+a:active { color: #777; }
+
+
 /* content 고정폭  */
 html, body {
   height: 100%;
@@ -28,6 +35,8 @@ html, body {
     padding-right: 20px;
   }
 }
+
+
 
 .full-container {
 	padding-left: 0px;
@@ -681,6 +690,10 @@ html, body {
 
 .height-30 {
 	height: 30px;
+}
+
+.border-right {
+	border-right: 1px solid #cdcdcd;
 }
 
 .text-center {

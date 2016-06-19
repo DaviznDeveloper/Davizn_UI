@@ -19,9 +19,15 @@
 		
 		<title>Davizn - 데이터 관리형 도구 사이트</title>
 		
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		
+  		<!-- jQery-ui -->
+  		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+		
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   		
   		<!-- Bootstrap-datepicker -->
@@ -29,10 +35,6 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.2/moment-with-locales.min.js"></script>
 		<script src="${pageContext.request.contextPath}/resources/lib/datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
   		
-  		<!-- jQery-ui -->
-  		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-		
 		<!-- font-awesome -->
 		<link href="${pageContext.request.contextPath}/resources/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 		
@@ -56,6 +58,7 @@
 		<link href="${pageContext.request.contextPath}/resources/css/sideBar.css" rel="stylesheet">
 		<link href="${pageContext.request.contextPath}/resources/css/board.css" rel="stylesheet">
 		<link href="${pageContext.request.contextPath}/resources/css/dashboard-style.css" rel="stylesheet">
+		<link href="${pageContext.request.contextPath}/resources/css/group.css" rel="stylesheet">
 		
 		<!-- Custom Script -->
 		<script src="${pageContext.request.contextPath}/resources/js/common.js"></script>
