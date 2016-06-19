@@ -57,7 +57,7 @@
 													<div class="row">
 														<label for="inputgroupIntroduce" class="col-sm-2 control-label">그룹 소개</label>
 														<div class="col-sm-10">
-															<textarea name="groupIntroduce" class="form-control" rows="3" id="inputgroupIntroduce"
+															<textarea name="groupIntroduce" class="form-control textarea-size-fix" rows="3" id="inputgroupIntroduce"
 																placeholder="그룹에 대해 간략하게 소개하세요"></textarea>
 														</div>
 													</div>

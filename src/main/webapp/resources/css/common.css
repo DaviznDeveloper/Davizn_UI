@@ -722,4 +722,8 @@ html, body {
 	white-space: nowrap;
 	word-wrap: normal;
 }
+
+.textarea-size-fix {
+	resize: none;
+}
 /* 쉬운 공통 설정 */
