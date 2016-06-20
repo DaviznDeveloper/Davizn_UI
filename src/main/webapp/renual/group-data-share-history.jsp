@@ -13,7 +13,9 @@
 						<ol class="breadcrumb">
 							<li><a href="${pageContext.request.contextPath}/renual/index.jsp">홈</a></li>
 							<li><a href="${pageContext.request.contextPath}/renual/data-repo.jsp">내 그룹</a></li>
-							<li class="active">그룹 데이터</li>
+							<li><a href="${pageContext.request.contextPath}/renual/data-repo.jsp">그룹 데이터</a></li>
+							<li><a href="${pageContext.request.contextPath}/renual/data-repo.jsp">그룹에 공유된 데이터</a></li>
+							<li class="active">그룹에 공유된 데이터 히스토리</li>
 						</ol>
 						
 						<div class="col-sm-12 no-padding margin-bottom-10">

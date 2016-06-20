@@ -719,4 +719,40 @@ html, body {
 .textarea-size-fix {
 	resize: none;
 }
+
+.a-font {
+	color: #777;
+}
+
+.panel-green {
+	border: 1px solid #4cae4c;
+}
+
+.panel-green > .panel-heading {
+	background: #5cb85c;
+	color: #fff;
+}
+
+.panel-purple {
+	border: 1px solid #6a009d;
+}
+
+.panel-purple-l {
+	border: 1px solid #e2b2f9;
+}
+
+.panel-purple > .panel-heading, .btn-purple {
+	background: #71448d;
+	color: #fff;
+}
+
+.panel-purple-l > .panel-heading {
+	background: #e1c8fe;
+	color: #7a24aa;
+}
+
+.btn-purple:hover {
+	background: #5d008d;
+	color: #fff;
+}
 /* 쉬운 공통 설정 */
