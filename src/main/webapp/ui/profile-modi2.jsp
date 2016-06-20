@@ -5,8 +5,10 @@
 
 <%@include file="/ui/header.jsp"%>
 				
+			<div class="container">	
+				
 				<!-- content -->
-				<div class="col-md-10 content-container">
+				<div class="col-md-12 content-container">
 
 					<ol class="breadcrumb">
 						<li><a href="${pageContext.request.contextPath}/ui/index.jsp">홈</a></li>
@@ -27,7 +29,7 @@
 									<!-- http://en.wikipedia.org/wiki/Cross-origin_resource_sharing -->
 									<img id="profile-preview" src="${pageContext.request.contextPath}/resources/img/avatar2.png" alt="...">
 									<button class="btn-crop js-crop">
-										Crop<img class="icon-crop" src="img/crop.svg">
+										Crop<img class="icon-crop" src="${pageContext.request.contextPath}/resources/lib/ImageResizeCropCanvas/img/crop.svg">
 									</button>
 								</div>
 							</a>
@@ -67,11 +69,13 @@
 	
 				</div>
 				
-				<div id="push"></div>
-				
 			</div>
-			
+				
+			<div id="push"></div>
+				
 		</div>
+		
+	</div>
 		
 		<script src="${pageContext.request.contextPath}/resources/lib/ImageResizeCropCanvas/js/jquery-2.1.1.min.js"></script>
 		<script src="${pageContext.request.contextPath}/resources/lib/ImageResizeCropCanvas/js/component.js"></script>

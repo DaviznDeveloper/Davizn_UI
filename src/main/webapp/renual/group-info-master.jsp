@@ -127,119 +127,14 @@
 														</button>
 													</div>
 													
+													<!-- form(#group-info-member-list) 강제 서브밋 버튼 -->
+													<!-- 중간에 폼이 껴있어서 스크립트로 강제 전송 시켜줘야 함. -->
 													<div class="pull-right margin-right-10">
-														<button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#group-create">
-															<i class="fa fa-street-view" aria-hidden="true"></i>
-															회원 검색
+														<button type="button" class="btn btn-primary btn-xs">
+															<i class="fa fa-user-secret" aria-hidden="true"></i>
+															그룹장 위임
 														</button>
 														
-														<!-- modal -->
-														<form action="" method="post" class="form-horizontal">
-															<div id="group-create" class="modal fade">
-																<div class="modal-dialog modal-sm">
-																	<div class="modal-content">
-																	
-																		<div class="modal-header">
-																			<button type="button" class="close" data-dismiss="modal"
-																				aria-label="Close">
-																				<span aria-hidden="true">&times;</span>
-																			</button>
-																			<h4 class="modal-title">회원 검색</h4>
-																		</div>
-																		
-																		<div class="modal-body">
-																		
-																			<h4 class="text-center">당신의 그룹에 회원을 초대하세요.</h4>
-																			
-																			<br>
-																			
-																			<div class="row">
-																				<div class="col-sm-12">
-																					<div class="input-group">
-																						<span class="input-group-btn">
-																							<button class="btn btn-primary" type="button">
-																								<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-																							</button>
-																						</span>
-																						<input type="text" id="group-info-member-search" class="form-control" placeholder="회원 아이디 또는 이메일">
-																					</div>
-																				</div>
-																			</div>
-																			
-																			<div class="row">
-																				<div class="col-sm-12">
-																					<br>
-																				</div>
-																			</div>
-																			
-																			<div class="row">
-																				<div class="col-sm-12">
-																					<div class="panel panel-primary">
-																						<div class="panel-heading">
-																							검색 결과
-																						</div>
-																						
-																						<ul class="list-group">
-																							<li class="list-group-item">
-																								<span class="checkbox group-info-member-search-check no-margin">
-																									<label>
-																										<input type="checkbox" id="blankCheckbox" name="userid" value="option1" aria-label="...">
-																										kglim (kglim@gmail.com)
-																									</label>
-																								</span>
-																							</li>
-																							<li class="list-group-item">
-																								<span class="checkbox group-info-member-search-check no-margin">
-																									<label>
-																										<input type="checkbox" id="blankCheckbox" name="userid" value="option1" aria-label="...">
-																										egoing (egoing@gmail.com)
-																									</label>
-																								</span>
-																							</li>
-																							<li class="list-group-item">
-																								<span class="checkbox group-info-member-search-check no-margin">
-																									<label>
-																										<input type="checkbox" id="blankCheckbox" name="userid" value="option1" aria-label="...">
-																										alphago (alphago@gmail.com)
-																									</label>
-																								</span>
-																							</li>
-																							<li class="list-group-item">
-																								<span class="checkbox group-info-member-search-check no-margin">
-																									<label>
-																										<input type="checkbox" id="blankCheckbox" name="userid" value="option1" aria-label="...">
-																										Zuckerberg (Zuckerberg@gmail.com)
-																									</label>
-																								</span>
-																							</li>
-																							<li class="list-group-item">
-																								<span class="checkbox group-info-member-search-check no-margin">
-																									<label>
-																										<input type="checkbox" id="blankCheckbox" name="userid" value="option1" aria-label="...">
-																										tobi (tobi@gmail.com)
-																									</label>
-																								</span>
-																							</li>
-																						</ul>
-																							
-																					</div>
-																				</div>
-																			</div>
-																			
-																		</div>
-																		
-																		<div class="modal-footer">
-																			<button type="reset" class="btn btn-default" data-dismiss="modal">취소</button>
-																			<button type="submit" class="btn btn-primary">초대</button>
-																		</div>
-																		
-																	</div>
-																	<!-- /.modal-content -->
-																</div>
-																<!-- /.modal-dialog -->
-															</div>
-														</form>
-														<!-- /.modal -->
 													</div>
 												
 													<div id="group-info-member-header" class="checkbox no-margin">
@@ -325,12 +220,129 @@
 											<form action="" method="post">
 												<div class="panel panel-success">
 													<div class="panel-heading">
+														
 														<div class="pull-right">
 															<button type="submit" id="group-info-member-delete" class="btn btn-success btn-xs">
 																<i class="fa fa-user-plus" aria-hidden="true"></i>
 																가입 승인
 															</button>
 														</div>
+														
+														<div class="pull-right margin-right-10">
+															<button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#group-create">
+																<i class="fa fa-street-view" aria-hidden="true"></i>
+																회원 검색
+															</button>
+															
+															<!-- modal -->
+															<form action="" method="post" class="form-horizontal">
+																<div id="group-create" class="modal fade">
+																	<div class="modal-dialog modal-sm">
+																		<div class="modal-content">
+																		
+																			<div class="modal-header">
+																				<button type="button" class="close" data-dismiss="modal"
+																					aria-label="Close">
+																					<span aria-hidden="true">&times;</span>
+																				</button>
+																				<h4 class="modal-title">회원 검색</h4>
+																			</div>
+																			
+																			<div class="modal-body">
+																			
+																				<h4 class="text-center">당신의 그룹에 회원을 초대하세요.</h4>
+																				
+																				<br>
+																				
+																				<div class="row">
+																					<div class="col-sm-12">
+																						<div class="input-group">
+																							<span class="input-group-btn">
+																								<button class="btn btn-primary" type="button">
+																									<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+																								</button>
+																							</span>
+																							<input type="text" id="group-info-member-search" class="form-control" placeholder="회원 아이디 또는 이메일">
+																						</div>
+																					</div>
+																				</div>
+																				
+																				<div class="row">
+																					<div class="col-sm-12">
+																						<br>
+																					</div>
+																				</div>
+																				
+																				<div class="row">
+																					<div class="col-sm-12">
+																						<div class="panel panel-primary">
+																							<div class="panel-heading">
+																								검색 결과
+																							</div>
+																							
+																							<ul class="list-group">
+																								<li class="list-group-item">
+																									<span class="checkbox group-info-member-search-check no-margin">
+																										<label>
+																											<input type="checkbox" id="blankCheckbox" name="userid" value="option1" aria-label="...">
+																											kglim (kglim@gmail.com)
+																										</label>
+																									</span>
+																								</li>
+																								<li class="list-group-item">
+																									<span class="checkbox group-info-member-search-check no-margin">
+																										<label>
+																											<input type="checkbox" id="blankCheckbox" name="userid" value="option1" aria-label="...">
+																											egoing (egoing@gmail.com)
+																										</label>
+																									</span>
+																								</li>
+																								<li class="list-group-item">
+																									<span class="checkbox group-info-member-search-check no-margin">
+																										<label>
+																											<input type="checkbox" id="blankCheckbox" name="userid" value="option1" aria-label="...">
+																											alphago (alphago@gmail.com)
+																										</label>
+																									</span>
+																								</li>
+																								<li class="list-group-item">
+																									<span class="checkbox group-info-member-search-check no-margin">
+																										<label>
+																											<input type="checkbox" id="blankCheckbox" name="userid" value="option1" aria-label="...">
+																											Zuckerberg (Zuckerberg@gmail.com)
+																										</label>
+																									</span>
+																								</li>
+																								<li class="list-group-item">
+																									<span class="checkbox group-info-member-search-check no-margin">
+																										<label>
+																											<input type="checkbox" id="blankCheckbox" name="userid" value="option1" aria-label="...">
+																											tobi (tobi@gmail.com)
+																										</label>
+																									</span>
+																								</li>
+																							</ul>
+																								
+																						</div>
+																					</div>
+																				</div>
+																				
+																			</div>
+																			
+																			<div class="modal-footer">
+																				<button type="reset" class="btn btn-default" data-dismiss="modal">취소</button>
+																				<button type="submit" class="btn btn-primary">초대</button>
+																			</div>
+																			
+																		</div>
+																		<!-- /.modal-content -->
+																	</div>
+																	<!-- /.modal-dialog -->
+																</div>
+															</form>
+															<!-- /.modal -->
+														</div>
+															
 														가입 신청한 회원
 													</div>
 													
