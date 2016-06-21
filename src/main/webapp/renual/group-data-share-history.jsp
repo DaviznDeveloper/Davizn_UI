@@ -18,424 +18,118 @@
 							<li class="active">그룹에 공유된 데이터 히스토리</li>
 						</ol>
 						
-						<div class="col-sm-12 no-padding margin-bottom-10">
-							
-							<!-- Button trigger modal -->
-							<button type="button" class="btn btn-primary"
-								data-toggle="modal" data-target="#group-data-create">
-								그룹 데이터 만들기
-							</button>
-			
-							<!-- Modal -->
-							<div class="modal fade" id="group-data-create" tabindex="-1" role="dialog"
-								aria-labelledby="myModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content">
+						<div class="col-sm-6 margin-bottom-10">
 						
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal"
-												aria-label="Close">
-												<span aria-hidden="true">&times;</span>
-											</button>
-											<h4 class="modal-title" id="myModalLabel">생성할 그룹 데이터 선택하기</h4>
-										</div>
-		
-										<div class="modal-footer">
-											<div class="row col-sm-12 center-block">
-											
-												<div class="col-sm-4">
-													<div class="row">
-														<div class="thumbnail">
-															<img src="${pageContext.request.contextPath}/resources/img/data-image.jpg" alt="..." height="150">
-															<div class="caption">
-																<h3>아이디어 공유<br> 데이터</h3>
-																<p>아이디어 공유 형 데이터는 도화지에 포스트잇(아이디어 또는 내용)을 붙일 수 있어요.</p>
-																<p>
-																	<a href="#" class="btn btn-primary" role="button">선택</a>
-																</p>
-															</div>
-														</div>
-													</div>
-												</div>
-												
-												<div class="col-sm-4">
-													<div class="row">
-														<div class="thumbnail">
-															<img src="${pageContext.request.contextPath}/resources/img/data-image.jpg" alt="..." height="150">
-															<div class="caption">
-																<h3>마인드맵 데이터</h3>
-																<p>현재 열씸히 개발 중 입니다.^^</p>
-																<p>
-																	<a href="#" class="btn btn-primary" role="button">선택</a>
-																</p>
-															</div>
-														</div>
-													</div>
-												</div>
-												
-											</div>
-										</div>
-			
+							<h4>
+								<a href="" class="btn btn-info">이 데이터를 원본 데이터로 변경</a>
+							</h4>
+						
+							<div id="group-data-detail-history-showbox">
+								<!-- 해당 데이터의 상세 내용 -->
+								<div class="panel panel-purple-l note-detail-content">
+									<div class="panel-heading note-detail-title">
+										<h3 class="panel-title">
+											목표관리 정의서&nbsp;&nbsp;&nbsp;&nbsp;
+											<small class="note-detail-date">2016.06.21 에 'seulki' 님이 최종 수정.</small>
+										</h3>
+									</div>
+									<div class="panel-body">
+										누구나 한번쯤은 자기만의 세계로<br>
+										빠져들게 되는 순간이 있지이~이이<br>
+										<br>
+										그렇지만 나는 제자리로 오지 못했어<br>
+										되돌아 나오는 길을 모르니~이이이<br>
+										<br>
+										너무 많은 생각과 너무 많은 걱정에<br>
+										온통 내자신을 가둬 두었지~이이이<br>
+										<br>
+										이젠 이런 내 모습 무진장 불안해보여~어어어?<br>
+										다시 시작할 줄 모오르니~이이<br>
+										<br>
+										이제~에엔 세사~항에 나가고 싶어<br>
+										당당히 내 모습을 보여줘야~아 해~애에<br>
 									</div>
 								</div>
+								<!-- 해당 데이터의 상세 내용 -->
 							</div>
-							<!-- Modal -->
 							
-							<!-- 내 데이터 가져오기 버튼 -->
-							<!-- Button trigger modal -->
-							<button type="button" class="btn btn-purple"
-								data-toggle="modal" data-target="#my-data-share">
-								내 데이터 공유하기
-							</button>
+						</div>
+						
+						<div class="col-sm-6 margin-bottom-10">
+
+							<h4>데이터 히스토리</h4>
 							
-							<!-- Modal -->
-							<form action="" method="post">
-								<div class="modal fade" id="my-data-share" tabindex="-1" role="dialog"
-									aria-labelledby="myModalLabel" aria-hidden="true">
-									<div class="modal-dialog modal-lg">
-										<div class="modal-content">
+							<!-- 한 묶음 (첫번째 리스트는 active-purple 클래스 추가해야 함) -->
+							<div class="list-group">
+								<a href="#" class="list-group-item active-purple">
+									<p class="list-group-item-text margin-bottom-10">2016.06.21. 23:34</p>
+									<h4 class="list-group-item-heading">
+										<span class="text-bold">seulki</span> 님이 
+										<span class="text-bold">[목표관리 정의서]</span> 원본 데이터를 수정.
+									</h4>
+									<p class="list-group-item-text">
+										[그룹 목표관리] - 타임라인 기능 구현 완료!!
+									</p>
+									
+								</a>
+							</div>
 							
-											<div class="modal-header">
-												<button type="button" class="close" data-dismiss="modal"
-													aria-label="Close">
-													<span aria-hidden="true">&times;</span>
-												</button>
-												<h4 class="modal-title" id="myModalLabel">공유할 내 데이터 선택하기</h4>
-											</div>
-											
-											<div class="modal-body">
-												<div class="row col-xs-12 center-block">
-												
-													<div class="col-sm-4">
-														<div class="panel panel-purple">
-															<div class="panel-heading">
-																<div class="radio">
-																	<label>
-																		<!-- input[type=radio] name값 = 데이터일련번호 멤버필드명 / value값 = "데이터 일련번호값" -->
-																		<input type="radio" name="optionsRadios"
-																		id="optionsRadios1" value="option1">
-																		데이터 저장소 제목
-																	</label>
-																</div>
-															</div>
-															<div class="panel-body">
-																<div class="list-group">
-																	<h4 class="list-group-item-heading">
-																		데이터 제목
-																	</h4>
-																	<p class="list-group-item-text">
-																		우주최강 번개돌이
-																	</p>
-																</div>
-																
-																<div class="list-group">
-																	<h4 class="list-group-item-heading">
-																		데이터 종류
-																	</h4>
-																	<p class="list-group-item-text">
-																		노트형 데이터
-																	</p>
-																</div>
-																
-																<div class="list-group">
-																	<h4 class="list-group-item-heading">
-																		데이터 생성일
-																	</h4>
-																	<p class="list-group-item-text">
-																		2016.06.20
-																	</p>
-																</div>
-																
-															</div>
-														</div>
-													</div>
-													
-													<div class="col-sm-4">
-														<div class="panel panel-purple">
-															<div class="panel-heading">
-																<div class="radio">
-																	<label>
-																		<!-- input[type=radio] name값 = 데이터일련번호 멤버필드명 / value값 = "데이터 일련번호값" -->
-																		<input type="radio" name="optionsRadios"
-																		id="optionsRadios1" value="option1">
-																		데이터 저장소 제목
-																	</label>
-																</div>
-															</div>
-															<div class="panel-body">
-																<div class="list-group">
-																	<h4 class="list-group-item-heading">
-																		데이터 제목
-																	</h4>
-																	<p class="list-group-item-text">
-																		우주최강 번개돌이
-																	</p>
-																</div>
-																
-																<div class="list-group">
-																	<h4 class="list-group-item-heading">
-																		데이터 종류
-																	</h4>
-																	<p class="list-group-item-text">
-																		노트형 데이터
-																	</p>
-																</div>
-																
-																<div class="list-group">
-																	<h4 class="list-group-item-heading">
-																		데이터 생성일
-																	</h4>
-																	<p class="list-group-item-text">
-																		2016.06.20
-																	</p>
-																</div>
-																
-															</div>
-														</div>
-													</div>
-													
-													<div class="col-sm-4">
-														<div class="panel panel-purple">
-															<div class="panel-heading">
-																<div class="radio">
-																	<label>
-																		<!-- input[type=radio] name값 = 데이터일련번호 멤버필드명 / value값 = "데이터 일련번호값" -->
-																		<input type="radio" name="optionsRadios"
-																		id="optionsRadios1" value="option1">
-																		데이터 저장소 제목
-																	</label>
-																</div>
-															</div>
-															<div class="panel-body">
-																<div class="list-group">
-																	<h4 class="list-group-item-heading">
-																		데이터 제목
-																	</h4>
-																	<p class="list-group-item-text">
-																		우주최강 번개돌이
-																	</p>
-																</div>
-																
-																<div class="list-group">
-																	<h4 class="list-group-item-heading">
-																		데이터 종류
-																	</h4>
-																	<p class="list-group-item-text">
-																		노트형 데이터
-																	</p>
-																</div>
-																
-																<div class="list-group">
-																	<h4 class="list-group-item-heading">
-																		데이터 생성일
-																	</h4>
-																	<p class="list-group-item-text">
-																		2016.06.20
-																	</p>
-																</div>
-																
-															</div>
-														</div>
-													</div>
-													
-												</div>
-											</div>
-			
-											<div class="modal-footer">
-												<button type="reset" class="btn btn-default" data-dismiss="modal">취소</button>
-												<button type="submit" class="btn btn-purple">확인</button>
-											</div>
+							<div class="list-group">
+								<a href="#" class="list-group-item">
+									<p class="list-group-item-text margin-bottom-10">2016.06.20. 17:42</p>
+									<h4 class="list-group-item-heading">
+										<span class="text-bold">seulki</span> 님이 
+										<span class="text-bold">[목표관리 정의서]</span> 원본 데이터를 수정.
+									</h4>
+									<p class="list-group-item-text">
+										[그룹 목표관리] - 타임라인 기능 구현 수정 ㅠㅠ
+									</p>
+									
+								</a>
+							</div>
+							
+							<div class="list-group">
+								<a href="#" class="list-group-item">
+									<p class="list-group-item-text margin-bottom-10">2016.06.19. 13:11</p>
+									<h4 class="list-group-item-heading">
+										<span class="text-bold">seulki</span> 님이 
+										<span class="text-bold">[목표관리 정의서]</span> 원본 데이터를 수정.
+									</h4>
+									<p class="list-group-item-text">
+										[그룹 목표관리] - 타임라인 기능 구현 시작~
+									</p>
+									
+								</a>
+							</div>
+							
+							<div class="list-group">
+								<a href="#" class="list-group-item">
+									<p class="list-group-item-text margin-bottom-10">2016.06.19. 13:11</p>
+									<h4 class="list-group-item-heading">
+										<span class="text-bold">seulki</span> 님이 
+										<span class="text-bold">[목표관리 정의서]</span> 원본 데이터를 수정.
+									</h4>
+									<p class="list-group-item-text">
+										[그룹 목표관리] - 타임라인 기능 구현 시작~
+									</p>
+									
+								</a>
+							</div>
+							
+							<div class="list-group">
+								<a href="#" class="list-group-item">
+									<p class="list-group-item-text margin-bottom-10">2016.06.19. 13:11</p>
+									<h4 class="list-group-item-heading">
+										<span class="text-bold">seulki</span> 님이 
+										<span class="text-bold">[목표관리 정의서]</span> 원본 데이터를 수정.
+									</h4>
+									<p class="list-group-item-text">
+										[그룹 목표관리] - 타임라인 기능 구현 시작~
+									</p>
+									
+								</a>
+							</div>
 				
-										</div>
-									</div>
-								</div>
-							</form>
-							<!-- Modal -->
-							
-							<hr>
-							
-							<div class="col-sm-6">
-								<div class="panel panel-info">
-									<div class="panel-heading">
-										<h3 class="panel-title">그룹 전용 데이터</h3>
-									</div>
-									<div class="panel-body">
-										
-										<a href="" class="a-font">
-											<div class="col-sm-6">
-												<div class="panel panel-primary">
-													<div class="panel-heading">
-														데이터 제목
-													</div>
-													<div class="panel-body">
-														
-														<div class="list-group">
-															<h4 class="list-group-item-heading">
-																데이터 종류
-															</h4>
-															<p class="list-group-item-text">
-																아이디어 공유 데이터
-															</p>
-														</div>
-														
-														<div class="list-group">
-															<h4 class="list-group-item-heading">
-																데이터 생성자
-															</h4>
-															<p class="list-group-item-text">
-																nameLim
-															</p>
-														</div>
-														
-														<div class="list-group">
-															<h4 class="list-group-item-heading">
-																데이터 최종 수정일
-															</h4>
-															<p class="list-group-item-text">
-																2016.06.22
-															</p>
-														</div>
-														
-													</div>
-												</div>
-											</div>
-										</a>
-										
-										<a href="" class="a-font">
-											<div class="col-sm-6">
-												<div class="panel panel-primary">
-													<div class="panel-heading">
-														데이터 제목
-													</div>
-													<div class="panel-body">
-														
-														<div class="list-group">
-															<h4 class="list-group-item-heading">
-																데이터 종류
-															</h4>
-															<p class="list-group-item-text">
-																아이디어 공유 데이터
-															</p>
-														</div>
-														
-														<div class="list-group">
-															<h4 class="list-group-item-heading">
-																데이터 생성자
-															</h4>
-															<p class="list-group-item-text">
-																nameLim
-															</p>
-														</div>
-														
-														<div class="list-group">
-															<h4 class="list-group-item-heading">
-																데이터 최종 수정일
-															</h4>
-															<p class="list-group-item-text">
-																2016.06.22
-															</p>
-														</div>
-														
-													</div>
-												</div>
-											</div>
-										</a>
-										
-									</div>
-								</div>
-							</div>
-							
-							<div class="col-sm-6">
-								<div class="panel panel-purple-l">
-									<div class="panel-heading">
-										<h3 class="panel-title">그룹에 공유된 데이터</h3>
-									</div>
-									<div class="panel-body">
-										
-										<a href="" class="a-font">
-											<div class="col-sm-6">
-												<div class="panel panel-purple">
-													<div class="panel-heading">
-														데이터 제목
-													</div>
-													<div class="panel-body">
-														
-														<div class="list-group">
-															<h4 class="list-group-item-heading">
-																데이터 종류
-															</h4>
-															<p class="list-group-item-text">
-																노트형 데이터
-															</p>
-														</div>
-														
-														<div class="list-group">
-															<h4 class="list-group-item-heading">
-																데이터 공유자
-															</h4>
-															<p class="list-group-item-text">
-																nameLim
-															</p>
-														</div>
-														
-														<div class="list-group">
-															<h4 class="list-group-item-heading">
-																데이터 최종 수정일
-															</h4>
-															<p class="list-group-item-text">
-																2016.06.22
-															</p>
-														</div>
-														
-													</div>
-												</div>
-											</div>
-										</a>
-										
-										<a href="" class="a-font">
-											<div class="col-sm-6">
-												<div class="panel panel-purple">
-													<div class="panel-heading">
-														데이터 제목
-													</div>
-													<div class="panel-body">
-														
-														<div class="list-group">
-															<h4 class="list-group-item-heading">
-																데이터 종류
-															</h4>
-															<p class="list-group-item-text">
-																노트형 데이터
-															</p>
-														</div>
-														
-														<div class="list-group">
-															<h4 class="list-group-item-heading">
-																데이터 공유자
-															</h4>
-															<p class="list-group-item-text">
-																nameLim
-															</p>
-														</div>
-														
-														<div class="list-group">
-															<h4 class="list-group-item-heading">
-																데이터 최종 수정일
-															</h4>
-															<p class="list-group-item-text">
-																2016.06.22
-															</p>
-														</div>
-														
-													</div>
-												</div>
-											</div>
-										</a>
-										
-									</div>
-								</div>
-							</div>
-							
 						</div>
 						
 					</div>	

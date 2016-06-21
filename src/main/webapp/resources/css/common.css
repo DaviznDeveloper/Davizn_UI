@@ -751,8 +751,16 @@ html, body {
 	color: #7a24aa;
 }
 
+.active-purple {
+	background: #f1e6ff;
+}
+
 .btn-purple:hover {
 	background: #5d008d;
 	color: #fff;
+}
+
+.text-bold {
+	font-weight: bold;
 }
 /* 쉬운 공통 설정 */

@@ -22,10 +22,49 @@
 							
 							<div class="note-detail-option">
 							
-								<a href="">
+								<span data-toggle="modal" data-target="#group-data-push">
 									<span class="glyphicon glyphicon-cloud-upload group-data-share-note-modi-btn" 
 										data-toggle="tooltip" title="그룹 원본 데이터에 저장하기" aria-hidden="true"></span>
-								</a>
+								</span>
+								
+								<!-- Modal -->
+								<div class="modal fade" id="group-data-push" tabindex="-1" role="dialog"
+									aria-labelledby="myModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+							
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"
+													aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+												<h4 class="modal-title" id="myModalLabel">그룹 원본 데이터에 저장하기</h4>
+											</div>
+			
+											<div class="modal-body">
+												<div class="row col-xs-12 center-block">
+
+													<div class="form-group">
+														<label for="groupPushComment">원본 수정에 대한 코멘트</label>
+														<textarea name="" id="groupPushComment" class="form-control textarea-size-fix"></textarea>
+													</div>
+												
+												</div>
+											</div>
+			
+											<div class="modal-footer">
+												<div class="row col-sm-12 center-block">
+												
+													<button type="reset" class="btn btn-default" data-dismiss="modal">취소</button>
+													<button type="submit" class="btn btn-primary">확인</button>
+													
+												</div>
+											</div>
+				
+										</div>
+									</div>
+								</div>
+								<!-- Modal -->
 								
 								<span data-toggle="modal" data-target="#group-data-pick">
 									<span class="glyphicon glyphicon-cloud-download group-data-share-note-modi-btn" 
