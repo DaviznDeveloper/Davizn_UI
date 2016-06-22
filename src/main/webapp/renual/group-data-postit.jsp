@@ -86,9 +86,9 @@
 
 
 <script type="text/javascript">
-		
 
-		var atrament = atrament('canvas', window.innerWidth, window.innerHeight);
+	var note = noteBox.data("coaStickyNote");
+	console.log(note);
 	
 </script>
 

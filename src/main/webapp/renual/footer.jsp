@@ -3,6 +3,12 @@
     
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
+		
+			
+			</div>
+			
+		</div>
+
 		<div id="footer">
 			<div class="container">
 				<p class="muted credit">
