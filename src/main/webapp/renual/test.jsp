@@ -78,38 +78,7 @@
 	    <script src="//cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-dom.js"></script>
 		<script src="${pageContext.request.contextPath}/resources/lib/sketch/js/literallycanvas.js"></script>
 		
-		<script type="text/javascript">
-			$(function() {
-				$.fn.outerHTML = function() {
-				    var el = $(this);
-				    if( !el[0] ) return "";
-				 
-				    if (el[0].outerHTML) {
-				        return el[0].outerHTML;
-				    } else {
-				        var content = el.wrap('<p/>').parent().html();
-				        el.unwrap();
-				        return content;
-				    }
-				}
-				
-				$(".sketch-save").click(function() {
-					fromDataURL();;
-				});
-				console.log($(".sketch-box").outerHTML());
-			});
-			
-			function fromDataURL(){
-				var canva = document.getElementById('my-sketch');
-				var canv = $(canv).find('canvas');
-				console(canv);
-				var canvas = canv.toDataURL(); 
-			  var copyCanvas = document.getElementById('text-box');     
-			  var copyContext = copyCanvas.getContext('2d'); 
-			  copyContext.drawImage(canvas,0,0);
-			   
-			}
-		</script>
+
 		
 		<style type="text/css">
 			.sketch-box {
@@ -420,7 +389,7 @@
 				
 					<br>
 					
-					<canvas id="test-box" class="test-box"></canvas>
+					<canvas id="test-box" width="1000" height="300" class="test-box"></canvas>
 					
 					<button type="button" class="btn btn-primary sketch-save">쇼미더저장</button>
 					
@@ -429,12 +398,27 @@
 						<div id="my-sketch" class="my-drawing"></div>
 						
 						
-						<script>
-							LC.init(
-					            document.getElementsByClassName('my-drawing')[0],
-					            {imageURLPrefix: '${pageContext.request.contextPath}/resources/lib/sketch/img'}
-					        );
-						</script>
+							<script type="text/javascript">
+							
+								$(function() {
+									
+									var lc = LC.init(
+							            document.getElementsByClassName('my-drawing')[0],
+							            {imageURLPrefix: '${pageContext.request.contextPath}/resources/lib/sketch/img'}
+							        );
+									
+									$(".sketch-save").click(function() {
+										var lllc = lc.getImage().toDataURL();
+										alert(lllc);
+										var copyimg = new Image();
+										var copyCanvas = $("#test-box");
+										var copyContext = copyCanvas.get(0).getContext('2d'); 
+										copyimg.src = lllc;
+										copyContext.drawImage(copyimg,0,0);
+									});
+									
+								});
+							</script>
 					
 					</div>
 					

@@ -17,6 +17,8 @@
 							<li class="active">노트형 데이터 만들기</li>
 						</ol>
 						
+						
+						
 						<form action="" method="post">
 							
 							<div class="note-detail-option">
