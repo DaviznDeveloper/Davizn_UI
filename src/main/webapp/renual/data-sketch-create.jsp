@@ -17,12 +17,11 @@
 							<li class="active">스케치형 데이터 만들기</li>
 						</ol>
 						
-						<form action="" method="post" id="sketchForm">
+						<form action="" method="post">
 						
 							<div class="note-detail-option">
 								<span class="glyphicon glyphicon-save sketch-save-btn" 
 									data-toggle="tooltip" title="노트 저장하기" aria-hidden="true"></span>
-								<span class="sketch-save-text"></span>
 							</div>
 						
 							<input type="text" name="" class="form-control input-lg sketch-title" placeholder="제목을 입력하세요">
@@ -67,9 +66,6 @@
 			var sketchData = lc.getImage().toDataURL();
 			
 			$("#sketchData").val(sketchData);
-			$("#sketchView").attr('src',sketchData);
-			
-			$("#sketchForm").submit();
 			
 			//alert(sketchData);
 			//var copyimg = new Image();

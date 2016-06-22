@@ -23,7 +23,7 @@
 					<span class="glyphicon glyphicon-trash note-detail-modi" 
 						data-toggle="tooltip" title="노트 삭제하기" aria-hidden="true"></span>
 				</div>
-		
+				
 				<div class="panel panel-success note-detail-content">
 					<div class="panel-heading note-detail-title">
 						<h3 class="panel-title">
