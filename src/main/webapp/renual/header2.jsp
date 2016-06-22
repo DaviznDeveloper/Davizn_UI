@@ -47,6 +47,9 @@
 		<!-- css - switch -->
 		<link href="${pageContext.request.contextPath}/resources/lib/switch/switchable.css" rel="stylesheet">
 		
+		<!-- css - post-it -->
+		<link href="${pageContext.request.contextPath}/resources/lib/post-it/style.jPost-it.css" rel="stylesheet">
+		
 		<!-- css - Custom CSS -->
 		<link href="${pageContext.request.contextPath}/resources/css/common.css" rel="stylesheet">
 		<link href="${pageContext.request.contextPath}/resources/css/sideBar.css" rel="stylesheet">
@@ -54,7 +57,7 @@
 		<link href="${pageContext.request.contextPath}/resources/css/group.css" rel="stylesheet">
 		
 		<!-- jQuery -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/lib/jquery-ui-1.11.4/jquery-ui.min.js"></script>
 		
   		<!-- jQery-ui -->
   		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
